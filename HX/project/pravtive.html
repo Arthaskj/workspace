@@ -1,0 +1,57 @@
+<!--
+***********************************************
+*											  *
+*   用户名/UesrName:ArthasKj                  *
+*   微信/WeChat:kj1285707427                  *   
+*   微店/WeShop:小A部落						  *   
+*   电子邮件/E-mail:arthaskj@gmail.com 	      *
+*											  *
+***********************************************
+-->
+
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>demo</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src=""></script>
+</head>
+<body>
+<script>
+//	var jiage=1.6;
+//	var buy=2;
+//	var zhaoling=buy-jiage;
+//	var price=zhaoling.toFixed(2);
+//	console.log("找零："+price);
+
+	var num=prompt("请输入一个字符:","");
+	var aa,bb,cc;
+	if(num<'9' && num>'0'){
+		aa=true;
+	}else{aa=false }
+	if(num>'A' && num<'z'){
+		cc=true;
+	}else{cc=false;}
+
+	if(bb>'\u4e00' && bb<'\u9fa5'){
+		bb=true;
+	}else{bb=false}
+
+	console.log(num.charCodeAt().toString(16));
+	console.log("一个英文字符吗？"+cc+"\n"+"一个数字吗"+aa+"\n"+"是中文吗？"+bb+"\n")
+
+//	var n=2;
+//	var r=n++ + ++n + n++;
+//	console.log(r);
+
+//	var num2=prompt("请输入价格:","");
+//	num2>6888?console.log("商品涨价了"):console.log("商品降价了");
+
+</script>
+
+
+</body>
+</html>
+

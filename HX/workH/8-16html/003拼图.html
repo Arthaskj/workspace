@@ -1,0 +1,174 @@
+<!--
+ *****************************************
+ *
+ *     Author     : Arthas 
+ *     E-mail     : arthas@gmail.com
+ *     DateTime   : 2017-08-14  16:03:25
+ *     Description: 拼图游戏   
+ *     ChangeTime : 2017-08-17  14:06:38
+ *
+ *****************************************
+-->
+
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>拼图</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src="../kjlib.js"></script>
+	<script type="text/javascript" src="js/004.js"></script>
+	<style>
+	td{
+		padding: 5px 10px;
+	}
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	
+	#box{
+		position: fixed;
+		width: 100px;
+		height: 100px;
+		background: blue;
+		z-index: 999;
+	}
+	#box2{
+		position: relative;
+		width: 396px;
+		height: 396px;
+		border: 2px solid red;
+		z-index: 1;
+	}
+	#box2>div{
+		position: absolute;
+		width: 132px;
+		height: 132px;
+		z-index: 200;
+		margin: 0;
+		padding: 0;
+		
+	}
+
+.dh{
+	transition:all .5s;
+}
+	#img1{
+		background: url(img/5.png);
+		left:0;
+		top:0; 
+	}
+	/*.img1{
+		left:0;
+		top:0; 
+		
+	}*/
+	#img2{
+		background: url(img/1.png);
+			left:132px;
+		top:0; 
+	}
+	/*.img2{
+	left:132px;
+		top:0;
+		
+	}*/
+	#img3{
+background: url(img/4.png);
+left:264px;
+		top:0; 
+	}
+	/*.img3{
+		left:264px;
+		top:0; 
+		
+	}*/
+	#img4{
+background: url(img/9.png);
+left:0;
+		top:132px; 
+	}
+	/*.img4{
+		left:0;
+		top:132px; 
+		
+	}*/
+	#img5{
+background: url(img/6.png);
+left:132px;
+		top:132px; 
+	}
+	/*.img5{
+		left:132px;
+		top:132px; 
+		
+	}*/
+	#img6{
+background: url(img/2.png);
+left:264px;
+		top:132px; 
+	}
+	/*.img6{
+		left:264px;
+		top:132px; 
+		
+	}*/
+	#img7{
+background: url(img/8.png);
+left:0;
+		top:264px; 
+	}
+	/*.img7{
+		left:0;
+		top:264px; 
+		
+	}*/
+	#img8{
+background: url(img/3.png);
+left:132px;
+		top:264px; 
+	}
+	/*.img8{
+		left:132px;
+		top:264px; 
+		
+	}*/
+	#img9{
+background: url(img/7.png);
+left:264px;
+		top:264px; 
+	}
+	/*.img9{
+		left:264px;
+		top:264px; 
+		
+	}*/
+
+	</style>
+	<script type="text/javascript">
+
+	</script>
+</head>
+<body>
+	<div id="box2">
+		<div id="img1" class="img1"></div>
+		<div id="img2" class="img2"></div>
+		
+		<div id="img3" class="img3"></div>
+	
+		<div id="img4" class="img4"></div>
+		
+		<div id="img5" class="img5"></div>
+		<div id="img6" class="img6"></div>
+		<div id="img7" class="img7"></div>
+		<div id="img8" class="img8"></div>
+		<div id="img9" class="img9"></div>
+		
+	</div>
+	<br><br>
+	<input id="but" type="button" value="重新排列">
+</body>
+</html>

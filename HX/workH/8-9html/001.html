@@ -1,0 +1,144 @@
+ <!--
+ *****************************************
+ *
+ *     Author     : Arthas 
+ *     E-mail     : arthas@gmail.com
+ *     DateTime   : 2017-08-09 14:15:42
+ *     Description: setInterval制作滑块
+ *
+ *****************************************
+-->
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>轮播图</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src=""></script>
+	<style type="text/css">
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style:none;
+}
+ul li{
+    float:left;
+    cursor:pointer;
+}
+.lf{
+	float: left;
+}
+.rt{
+	float: right;
+}
+.jz{
+	position: absolute;
+	top: 0;left: 0;bottom: 0;right: 0;
+	margin: auto;
+}
+.lrjz{
+	position: absolute;
+	left: 0;right: 0;
+	margin: auto;
+}
+.tbjz{
+	position: absolute;
+	top: 0;bottom: 0;
+	margin: auto;
+}
+#box{
+	position: absolute;
+	left: 0;
+	top:100px;
+	width: 50px;
+	height: 50px;
+	background: red;
+}
+
+	</style>
+	<script type="text/javascript">
+	window.onload=function(){
+	var oBox = document.getElementById("box");
+	var oBut1 = document.getElementById("but1");
+	var oBut2 = document.getElementById("but2");
+	var oBut3 = document.getElementById("but3");
+	var oBut4 = document.getElementById("but4");
+
+	var flag = 0;
+	var flagb = 0;
+
+	//var left = setInterval(moveToLeft, 50);
+	// var top = setInterval(moveToTop, 100);
+	// var right = setInterval(moveToRight, 100);
+	// var bottom = setInterval(moveToBottom, 100);
+	
+		function moveToLeft(){
+			var leftVal = parseInt(getStyle(oBox,"left"))
+			if (leftVal<200) {
+				flag++;
+			oBox.style.left=flag+"px";
+			}else{
+				oBox.style.left=200+"px";
+				clearInterval(left);
+			}
+			
+		}
+
+
+		// function moveToTop(){
+		// 	flagb++;
+		// 	oBox.style.top=flagb+"px";
+		// }
+		// function moveToRight(){
+		// 	flag--;
+		// 	oBox.style.left=flag +"px";
+		// }
+		// function moveToBottom(){
+		// 	flagb--;
+		// 	oBox.style.top=flagb+"px";
+		// }
+		// oBut1.onclick=function(){
+			
+		// 	clearInterval(left);clearInterval(bottom);clearInterval(right);
+		// 	top = setInterval(moveToTop,100);
+			
+		// }
+		// oBut2.onclick=function(){
+			
+		// 	clearInterval(top);clearInterval(left);clearInterval(right);
+		// 	bottom = setInterval(moveToBottom,100);
+			
+			
+		// }
+		oBut3.onclick=function(){
+			left = setInterval(moveToLeft,100);
+			
+		}
+		oBut4.onclick=function(){
+			clearInterval(left);
+		}
+
+		// 获取class属性的库函数
+			function getStyle(obj,attr){
+				return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj)[attr];
+			}
+
+		
+		
+
+	}
+		
+
+	</script>
+</head>
+<body>
+	<div id="box"></div>
+	<input id="but1" type="button" value="上">
+	<input id="but2" type="button" value="下">
+	<input id="but3" type="button" value="动">
+	<input id="but4" type="button" value="停">
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jd</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<!--页面顶部 #top-->
+	<header id="top">
+		<div class="toptop">
+		<p><img src="img/star.jpg"><a>收藏京东</a></p>
+		<ul class="rt">
+			<li>您好，欢迎来到京东！<a>[登录]</a><a>[免费注册]</a> </li>
+			<li><b></b><a>我的订单</a></li>
+			<li><b></b><img src="img/vip.jpg"><a>会员俱乐部</a></li>
+			<li><b></b><img src="img/dakehu.jpg"><a>企业频道</a></li>
+			<li ><b ></b><a id="jd_id" href="#">手机京东</a></li>
+			<li>
+				<b></b>
+				<a id="service">客户服务</a>
+				<ul class="service_ul">
+					<li><a>帮助中心</a></li>
+					<li><a>帮助中心</a></li>
+					<li><a>帮助中心</a></li>
+					<li><a>帮助中心</a></li>
+					<li><a>帮助中心</a></li>
+				</ul>
+			</li>
+			<li><b></b><a>网站导航</a></li>
+			
+		</ul>
+		</div>
+	</header>
+	<!--LOGO 及搜索栏-->
+	<div id="top_main">
+		<img src="img/logo-201305.png">
+		<div class="searchmain">
+			<div class="search"> 
+				<input type="text" class="text">
+				<input type="button" value="搜索" class="serbut">
+			</div>
+			<p>热门搜索：家纺11月大促  彩虹电热毯  博洋家纺  霞珍  床垫床褥  九州鹿被子  南极人家纺</p>		
+		</div>
+		<div class="but2">
+			<div class="topmainbut"><p><img src="">我的京东</p></div>
+			<div class="topmainbut"><p><img src="">去购物车结算</p></div>
+		</div>
+	</div>
+	<!--导航栏-->
+	<nav id="nav">
+		<ul class="nav1">
+			<li>
+				<ul class="nav2">
+					<li>全部商品分类<img src="img/youjiantou.png" ></li>
+					<li>图书/音像/数字商品</li>
+					<li>家用电器</li>
+				</ul>
+			</li>
+			<li>首页</li>
+			<li>服装城</li>
+			<li>食品</li>
+			<li>团购</li>
+			<li>夺宝岛</li>
+			<li>闪购</li>
+			<li>金融</li>
+
+		</ul>
+	</nav>
+	<!--图片轮播图-->
+	<div id="banner">
+		<div class="banmain">
+			<div class="banmainleft">
+				<div class="mainimg">
+					<ul class="bannum">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+
+					</ul>
+				</div>
+				<div class="mainimg2">
+					<div class="mainimg22"></div>
+					<div class="mainimg21"></div>
+					<div class="mainimg21"></div>
+					<div class="mainimg21"></div>
+					<div class="mainimg23"></div>
+				</div>
+			</div>
+			<div class="banmainright">
+				<img src="img/index/ad_focus.jpg">
+				<span class="kuaibao">京东快报</span><span class="kuaibao">更多快报</span>
+				<div class="kuaibao2">
+					<ul>
+						<li>松鼠好年货2折开抢</li>
+						<li>名酒春晚 茅台888</li>
+						<li>四国鲜花定制款低至5折</li>
+						<li>家居年货大采购 低至9.9</li>
+					</ul>
+
+					<ul>
+						<li>年味儿十足最高199减50</li>
+						<li>MOTO X，10:30开售！</li>
+						<li>京东自营 爱鲜回家</li>
+						<li>关于假冒客户诈骗的声明</li>
+					</ul>
+				</div>
+				<div class="kuaibao3">
+					<figure>
+						<div class="figimg jz"></div>
+						<figcaption><p>话费</p></figcaption>
+						<img class="jz" src="img/index/virtuals_arraw.gif">
+					</figure>
+
+					<figure>
+						<div class="figimg jz"></div>
+						<figcaption><p>机票</p></figcaption>
+						<img class="jz" src="img/index/virtuals_arraw.gif">
+					</figure>
+
+					<figure>
+						<div class="figimg jz"></div>
+						<figcaption><p>彩票</p></figcaption>
+						<img class="jz" src="img/index/virtuals_arraw.gif">
+					</figure>
+
+					<figure>
+						<div class="figimg jz"></div>
+						<figcaption><p>游戏</p></figcaption>
+						<img class="jz" src="img/index/virtuals_arraw.gif">
+					</figure>
+					<figure>
+						<div class="figimg jz"></div>
+						<figcaption><p>旅行</p></figcaption>
+						
+					</figure>
+
+					<figure>
+						<div class="figimg jz"></div>
+						<figcaption><p>电影票</p></figcaption>
+						
+					</figure>
+
+					<figure>
+						<div class="figimg jz"></div>
+						<figcaption><p>理财</p></figcaption>
+						
+					</figure>
+
+					<figure>
+						<div class="figimg jz"></div>
+						<figcaption><p>水电煤</p></figcaption>
+						
+					</figure>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--主体部分-->
+	<section id="main">
+		<div class="life">
+			<div class="lifeimg">
+				<div class="lifeimgc">
+					<h3></h3>
+					<dl>
+						<dt></dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="lifeimg">
+				<div class="lifeimgc">
+					<dl>
+						<dt></dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="lifeimg">
+				<div class="lifeimgc">
+					<dl>
+						<dt></dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="lifeimg">
+				<div class="lifeimgc">
+					<dl>
+						<dt></dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="lifeimg">
+				<div class="lifeimgc">
+					<dl>
+						<dt></dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="lifeimg">
+				<div class="lifeimgc">
+					<dl>
+						<dt></dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="lifeimg">
+				<div class="lifeimgc">
+					<dl>
+						<dt></dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="lifeimg">
+				<div class="lifeimgc">
+					<dl>
+						<dt></dt>
+						<dd></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--底部栏-->
+	<footer id="footer_box">
+	
+	</footer>
+	<!--备案号-->
+	<footer id="footer">
+	
+	</footer>
+</body>
+</html>

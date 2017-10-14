@@ -1,0 +1,161 @@
+<!--
+ *****************************************
+ *
+ *     Author     : Arthas 
+ *     E-mail     : arthas@gmail.com
+ *     DateTime   : 2017-08-20  21:58:44
+ *     Description: 
+ *
+ *****************************************
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>MAC风格桌面</title>
+		<link rel="stylesheet" href="css/index.css" type="text/css" />
+		<script src="js/index.js" type="text/javascript"></script>
+		<script src="js/jquery-3.1.0.js" type="text/javascript"></script>
+	</head>
+	<body id="body1">
+		<!--
+        	作者：1285707427@qq.com
+        	时间：2017-05-24
+        	描述：模拟mac操作系统项目
+        -->
+        <!--睡眠息屏代码-->
+		<div class="sleep">
+			<div class="sleepimg"></div>
+			<div class="sleepbox">
+				<p class="sleepbox1" >用户名:</p>
+				<input type="text" name="text" class="sleepbox2" />
+				<br />
+				<p class="sleepbox1" >密&nbsp;&nbsp;&nbsp;&nbsp;码:</p>
+				<input type="password" name="password" class="sleepbox2" />
+				<br />
+				<input type="button" name="button" value="确认" class="sleepbox3" />
+			</div>
+		</div>
+		
+		
+		<!--强制退出弹窗操作-->
+		<div class="exitnownode">
+			<h3>强制关机会对电脑造成无法恢复的损伤，您确定要这么做吗？</h3>
+			<input type="button" class="exitnownodeyes" value="确定" />
+			<input type="button" class="exitnownodeno" value="取消" />
+		</div>
+		
+		<!--关机操作-->
+		<div class="shutdown">
+			<span>正在关机</span>
+			<div class="waiting rot"></div>
+		</div>
+		
+		
+		<!--开机动画显示-->
+		<div class="startlogo">
+			<div class="startimg"  alt="startlogo"></div>
+			<div class="startbar">
+				<div class="startbar2"></div>
+			</div>
+		</div>
+		
+		<!--关于本机-->
+		<div id="about">
+			<ul>
+				<li class="aboutli"><p>-</p></li>
+				<li class="aboutli"><p style="font-size: 7px;"><></p></li>
+				<li class="aboutli"><p style="font-size: 20px;">+</p></li>
+			</ul>
+			<span>关于本机</span>
+			<div class="aboutbg"><img src="img/aboutbg.png" width="600px" height="470px" alt="aboutbg"/></div>
+		</div>
+		
+		<!--背景图片-->
+		<div class="bg">
+			<!--顶层菜单栏-->
+			<div class="toolbar">
+				<ul>
+					<li  >
+						<img id="applelogo" src="img/applelogo.png" width="30px" height="20px" alt="logo"/>
+						<!--顶层菜单栏下拉列表-->
+						<ul id="apple">
+							<li  style="height:75px;">
+								<p class="aboutbut">关于本机</p>
+								<p>软件更新...</p>
+								<p>AppStore...</p>
+								
+							</li>
+							<li style="height:25px;">
+								<p id="systemper">系统偏好设置<span style="float: right;">></span></p>
+								<div id="systemper2" style="display: none;position:absolute;width: 150px;height: 52px;margin-left:180px;margin-top:-25px">
+									<ul>
+										<li><p>白天模式</p></li>
+										<li><p>夜间模式</p></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<p id="historypro">最近使用的项目<span style="float: right;">></span></p>
+								<div id="historypro2" style="display: none;position:absolute;width: 150px;height: 125px;margin-left:180px;margin-top:-25px">
+									<ul>
+										<li><p>一</p></li>
+										<li><p>二</p></li>
+										<li><p>三</p></li>
+										<li><p>四</p></li>
+										<li><p>五</p></li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<p class="exitnow">强制退出</p>
+							</li>
+							<li style="height:75px;">
+								<p id="sleep">睡眠</p>
+								<p id="rst">重新启动</p>
+								<p id="shutdown">关机</p>
+							</li>
+						</ul>
+					</li>
+					<li ><p>文件</p></li>
+					<li><p>编辑</p></li>
+					<li><p>显示</p></li>
+					<li><p>前往</p></li>
+					<li><p>帮助</p></li>
+				</ul>
+				
+				<ul class="toolbarright">
+					<li ><div></div></li>
+					<li ><div></div></li>
+					<li><div></div></li>
+					<li><div></div></li>
+					<li><div></div></li>
+					<li ><div></div></li>
+					<li ><div></div></li>
+					<li><div></div></li>
+					<li><div></div></li>
+					<li><div></div></li>
+				</ul>
+			</div>
+			
+			<!--底层菜单栏-->
+			<div class="barbg">
+				<ul>
+					<li class="icon"></li>
+					<li class="icon"></li>
+					<li class="icon"></li>
+					<li class="icon"></li>
+					<li class="icon"></li>
+					<li class="icon"></li>
+					<li class="icon"></li>
+					<li class="icon"></li>
+					<li class="icon"></li>
+					<li class="icon"></li>
+					
+				</ul>
+			</div>
+			
+		</div>
+	</body>
+</html>

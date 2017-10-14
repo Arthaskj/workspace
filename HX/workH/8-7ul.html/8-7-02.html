@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>demo</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src=""></script>
+    <script>
+window.onload=function(){
+        var fs=10;
+        var oBox = document.getElementById("box");
+        var aIpt = document.getElementsByTagName("input");
+  //  aIpt[1].onclick=function(){
+    //   alert(aIpt[0].value + '早上好');
+    //}
+    aIpt[1].addEventListener('click',function(){
+        alert(aIpt[0].value + '早上好');
+    },false)
+
+    aIpt[2].onclick=function(){        
+        fs += 5;
+        oBox.style.fontSize = fs + "px";
+    }
+
+    aIpt[3].onclick=function(){ 
+        fs -= 5;
+        oBox.style.fontSize = fs + "px";
+    }
+
+}
+
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="请输入姓名：">
+    <input type="button" value="提交">
+    
+
+    <div id="box">说句公道话价格阿卡江苏大华卡及是</div>
+    <input type="button" value="字体+">
+    <input type="button" value="字体-">
+
+
+</body>
+</html>
+

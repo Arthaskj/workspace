@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册</title>
+		<link rel="stylesheet" type="text/css" href="css/zzsc.css">
+		<style type="text/css">
+			table{
+				font-size: 12px;
+			}
+			table tr{
+				height: 30px;
+			}
+			.a{
+				font-size: 12px;
+				color: #333;
+				text-align: right;
+				width: 100px;
+			}
+			.bb td{
+				height: 50px;
+				border-bottom: 2px solid #999;
+			}
+			.b {
+				height: 50px;
+				}
+			.c{
+				font-size: 12px;
+				color: #999;
+			}
+			.form{
+				border-top: 2px solid #999;
+				border-left: 2px solid #999;
+				border-right: 2px solid #999;
+				border-bottom: 2px solid #999;
+			}
+			.p{
+				width: 180px;
+			}
+			span{
+				color: red;
+			}
+			.www{
+				position: relative;
+				width: 620px;
+				height: 620px;
+				
+				margin:auto;
+			}
+
+			.ad{
+				width: 200px;
+				height: 200px;
+				display: inline-block;
+				background: url(img/5.jpg) no-repeat center;
+			}
+			.bd{
+				width: 200px;
+				height: 200px;
+				display: inline-block;
+				background: url(img/6.jpg) no-repeat center;
+			}
+			.cd{
+				width: 200px;
+				height: 200px;
+				display: inline-block;
+				background: url(img/7.jpg) no-repeat center;
+			}
+			.d{
+				width: 200px;
+				height: 200px;
+				float: left;
+				background: url(img/5.jpg) no-repeat center;
+			}
+			.e{
+				width: 200px;
+				height: 200px;
+				float: left;
+				background: url(img/6.jpg) no-repeat center;
+			}
+			.f{
+				width: 200px;
+				height: 200px;
+				float: left;
+				background: url(img/7.jpg) no-repeat center;
+			}
+
+			figure {
+  width: 200px;
+  height: 60px;
+  margin: 50px auto;
+  cursor: pointer;
+  perspective: 500px;
+  -webkit-perspective: 500px;
+}
+
+figure div {
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+}
+
+figure:hover div {
+  transform: rotateX(-90deg);
+}
+
+span.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  border: 5px solid #fff;
+  font-family: 'Source Sans Pro',sans-serif;
+  line-height: 50px;
+  font-size: 17pt;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+span.face:nth-child(1) {
+  color: #fff;
+  transform: translate3d(0, 0, 30px);
+  -webkit-transform: translate3d(0, 0, 30px);
+}
+
+span.face:nth-child(2) {
+  color: #094b2c;
+  background: #fff;
+  transform: rotateX(90deg) translate3d(0, 0, 30px);
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
+}
+		</style>
+	</head>
+	<body id="body1">
+<figure>
+  <div>
+	<span class="face">Hover Me</span>
+	<span class="face">Button</span>
+  </div>
+</figure>
+
+
+
+
+		<table width="580px" height="25px" cellpadding="0px" cellspacing="0px" align="center">
+			<tr >
+				<td width="200px" style="color:red;">新用户注册</td>
+				<td>在线会员能享受：超级积分 超级便捷 个习惯化的服务</td>
+			</tr>
+		</table>
+		<table class="form" width="580px" height="auto" align="center"  cellpadding="0" cellspacing="0">
+			<tr  class="bb">
+				<td style="font-weight:bold;" align="right">个人资料：</td>
+				<td colspan="3" style="padding-left:50px"><span>*</span>为必填项</td>
+			</tr>
+			<tr class="b">
+				<td class="a"><span>*</span>验&nbsp;&nbsp;证&nbsp;&nbsp;码：</td>
+				<td class="p"><input type="text"></td>
+				<td align="center"><img src="img/5.jpg" width="100px" height="30px"></td>
+				<td><a href="#">点击更换</a></td>
+			</tr>
+			<tr>
+				<td class="a"><span>*</span>手机号码：</td>
+				<td class="p"><input type="text"></td>
+				<td class="c" colspan="2">最多11个字符，例如：13812345678</td>
+			</tr>
+			<tr>
+				<td class="a"><span>*</span>电子信箱：</td>
+				<td class="p"><input type="text"></td>
+				<td class="c" colspan="2">此邮箱将被用来确认您的身份。</td>
+			</tr>
+			<tr>
+				<td class="a"><span>*</span>设定密码：</td>
+				<td  class="p"><input type="password"></td>
+				<td class="c" colspan="2">长度必须在6-20个字符之间</td>
+			</tr>
+			<tr>
+				<td class="a"><span>*</span>重复密码：</td>
+				<td colspan="3"><input type="text"></td>
+			</tr>
+			<tr>
+				<td class="a"><span>*</span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
+				<td class="p"><input type="text"></td>
+				<td class="c" colspan="2">请输入真实姓名，最多10个字符。</td>
+			</tr>
+			<tr>
+				<td class="a"><span>*</span>昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</td>
+				<td class="p"><input type="text"></td>
+				<td class="c" colspan="2">最多30个字符。</td>
+			</tr>
+			<tr>
+				<td class="a"><span>*</span>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</td>
+				<td colspan="3"><input type="radio" name="sex">男 <input type="radio" name="sex">女</td>
+				
+			</tr>
+			<tr>
+				<td class="a">所&nbsp;&nbsp;在&nbsp;&nbsp;地：</td>
+				<td><select valur="请选择（省）">
+					<option>安徽省</option>
+					<option>四川省</option>
+					<option>江苏省</option>
+					<option>河南省</option>
+				</select>
+				</td>
+				<td colspan="2"><select value="请选择（市）">
+					<option>宣城市</option>
+					<option>合肥市</option>
+					<option>上海市</option>
+					<option>天津市</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="a">固定电话：</td>
+				<td class="p"><input type="text"></td>
+				<td class="c" colspan="2">最多30个字符。</td>
+			</tr>
+			<tr>
+				<td class="a">传&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真：</td>
+				<td class="p"><input type="text"></td>
+				<td class="c" colspan="2">最多12个字符，例如：01012345678</td>
+			</tr>
+			<tr>
+				<td class="a">
+					<select value="请选择（市）">
+						<option>差点</option>
+					</select>：
+				</td>
+				<td colspan="3"><input type="text"></td>
+				
+			</tr>
+			<tr>
+				
+				<td class="a">地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：</td>
+				<td class="p"><input type="text"></td>
+				<td class="c" colspan="2">最多255个字符。</td>
+			</tr>
+			<tr>
+				<td class="a">邮政编码：</td>
+				<td class="p"><input type="text"></td>
+				<td class="c" colspan="2">最多6个字符，例如：102030</td>
+			</tr>
+			<tr height="200px">
+				<td class="a">服务条款：</td>
+				<td colspan="3"  width="300px"><textarea rows="8" cols="60" >
+					kjadfhsenfijsendhcfjsedjhkdcfhinedkjsdcfsdfjkjfvkjadfhsenfijsendhcfjsedjhkdcfhinedkjsdcfsdfjkjfvkjadfhsenfijsendhcfjsedjhkdcfhinedkjsdcfsdfjkjfvkjadfhsenfijsendhcfjsedjhkdcfhinedkjsdcfsdfjkjfvkjadfhsenfijsendhcfjsedjhkdcfhinedkjsdcfsdfjkjfvkjadfhsenfijsendhcfjsedjhkdcfhinedkjsdcfsdfjkjfvkjadfhsenfijsendhcfjsedjhkdcfhinedkjsdcfsdfjkjfvkjadfhsenfijsendhcfjsedjhkdcfhinedkjsdcfsdfjkjfvkjadfhsenfijsendhcfjsedjhkdcfhinedkjsdcfsdfjkjfvsdfjskfnhrjvbgh
+				</textarea></td>
+			</tr>
+			<tr class="b">
+				<td colspan="4" align="center" style="color:red;">点击下面的“我接受”，即表示您同意上面的服务条款及隐私政策。<br>提醒：您是否已详细阅读并同意“关于退订及退款”？同意，亲点击下面：</td>
+			</tr>
+			<tr class="b">
+				<td colspan="4" align="center"><input type="button" value="我接受，创建我的账户" ></td>
+			</tr>
+
+		</table>
+		<br><br><br>
+		<div class="www">
+		<div class="ad"></div>
+		<div class="bd"></div>
+		<div class="cd"></div>
+		<br><br><br>
+		<div class="d"></div>
+		<div class="e"></div>
+		<div class="f"></div>
+		</div>
+	</body>
+</html>

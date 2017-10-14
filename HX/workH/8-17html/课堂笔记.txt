@@ -1,0 +1,40 @@
+﻿/*
+ *****************************************
+ *
+ *     Author     : Arthas 
+ *     E-mail     : arthas@gmail.com
+ *     DateTime   : 2017-08-16  09:09:54
+ *     Description: 课堂笔记
+ *
+ *****************************************
+*/
+
+onkeyup -------- 鼠标弹起
+
+array.push(item1,item2...itemn); -------- 向数组中添加一个或多个元素
+array.unshift(item1,item2...itemn); --------- 将一个或多个元素加入到数组的开始位置，所有元素向后移
+array.splice(start,delCount,item1,item2...itemn); --------- 从start位置开始，向后删除delCount个元素，然后从start位置开始插入一个或多个元素
+
+
+
+e.pageX;
+e.pageY;
+
+obj.offsetLeft;
+obj.offsetTop;
+
+
+var arrList =Array("1","2","3","4","5","6","7","8","9");
+	function changeImg(arr){
+		var len = arr.length;
+		for(var i=0;i<len-1;i++){
+			var idx = Math.floor(Math.random()*(len-i));
+			var temp= arr[idx];
+			arr[idx]= arr[len-i-1];
+			arr[len-i-1]=temp;
+		}
+		return arr;
+	}
+
+
+

@@ -1,0 +1,214 @@
+<!--
+ ********************************************************
+ * 作者              :Arthas
+ * E-mail            :arthaskj@gmail.com
+ * 建立时间	         :2017年08月08日 星期二 09时26分52秒
+ * 文件名            :001.html
+ * 描述              :setInterval的使用，作用于轮播图
+ ********************************************************
+-->
+
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>轮播图</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src=""></script>
+	<style type="text/css">
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style:none;
+}
+ul li{
+    float:left;
+    cursor:pointer;
+}
+.lf{
+	float: left;
+}
+.rt{
+	float: right;
+}
+.jz{
+	position: absolute;
+	top: 0;left: 0;bottom: 0;right: 0;
+	margin: auto;
+}
+.lrjz{
+	position: absolute;
+	left: 0;right: 0;
+	margin: auto;
+}
+.tbjz{
+	position: absolute;
+	top: 0;bottom: 0;
+	margin: auto;
+}
+#iphone{
+	position: relative;
+	width: 350px;
+	height: 540px;
+	background: #aaa;
+	border-radius: 10px;
+	overflow: hidden;
+}
+#iphone .chatBox{
+	position: absolute;
+	width:330px;
+	height:489px;
+	background: #fff;
+	top: 5px;
+	overflow: hidden;
+	border-radius: 5px;
+	border-bottom: 1px solid #999;
+}
+#iphone .chatBox .chatQ{
+	position: relative;
+	
+	margin: 5px 5px 5px 5px;
+	width: 100%;
+	
+	
+}
+#iphone .chatBox .chatQ p{
+	
+	padding: 5px 5px 5px 10px;
+	display: inline-block;
+	border-radius: 5px;
+	background: #1aad19;
+	min-height: 25px;
+	color: #fff;
+	max-width: 220px;
+	margin: 0 5px;
+}
+#iphone .chatBox .chatQ b{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background: green;
+	border-radius: 5px ;
+	border: 1px solid #ccc;
+}
+#iphone .chatBox .chatLeft{
+	
+}
+#iphone .chatBox .chatLeft b{
+	background: url(img/logo301.jpg)no-repeat center;
+}
+#iphone .chatBox .chatRight{
+	
+}
+#iphone .chatBox .chatRight b{
+	background: url(img/logo302.jpg)no-repeat center;
+}
+
+
+#iphone .chatInput{
+	position: absolute;
+	width: 330px;
+	height: 40px;
+	background: #ccc;
+	bottom: 5px;
+	border-radius: 5px;
+	
+}
+
+#iphone .chatInput b{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: url(img/logo401.jpg)no-repeat center;
+}
+#iphone .chatInput .inputBox{
+	width: 87%;
+	height: 40px;
+	background: ;
+	
+}
+#iphone .chatInput .inputBox #inputText{
+	height: 30px;
+	width: 67%;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	text-indent: 10px;
+	font-size: 20px;
+	margin-left: 5px;
+}
+#iphone .chatInput .inputBox #inputPush{
+	height:30px;
+	width: 16%;
+	background: #1aad19;
+	border: none;
+	border-radius: 10px;
+	right: 0;
+	color: #fff;
+}
+
+	</style>
+	<script type="text/javascript">
+	window.onload=function(){
+		var oIptText = document.getElementById("inputText");
+		var oIptPush = document.getElementById("inputPush");
+		var oChatBox = document.getElementsByClassName("chatBox");
+		var ologo = document.getElementById("logo");
+		var flag=0;
+
+		flage();
+		function flage(){
+			ologo.onclick=function(){
+			if (flag) {
+				ologo.style.background="url(img/logo401.jpg)";
+				flag=false;
+				return flag;
+			}else{
+				ologo.style.background="url(img/logo402.jpg)";
+				flag=true;
+				return flag;
+			}
+		}
+	}
+		oIptPush.onclick=function(){
+			if(flag==0){
+				oChatBox[0].innerHTML+="<div class='chatLeft chatQ rt'><b class='rt'></b><p class='rt '>"+oIptText.value+"</p></div>";
+				oIptText.value="";
+			}else if(flag==1){
+				oChatBox[0].innerHTML+="<div class='chatRight chatQ lf'><b class='lf'></b><p class='lf '>"+oIptText.value+"</p></div>";
+				oIptText.value="";
+			}
+		}
+
+
+	}
+		
+
+	</script>
+</head>
+<body>
+	<div id="iphone" class="jz">
+		<div class="chatBox lrjz" >
+			
+			<div class="chatRight chatQ lf">
+				<b class="lf"></b>
+				<p class="lf ">请开始你的表演</p>
+			</div>
+		</div>
+
+
+		<div class="chatInput lrjz">
+			<b id="logo"></b>
+			<div class="inputBox rt">
+				<input class="tbjz lf" id="inputText" type="text" >
+				<input class="tbjz rt" id="inputPush" type="button" value="发送">
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

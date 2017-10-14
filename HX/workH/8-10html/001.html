@@ -1,0 +1,198 @@
+<!--
+ *****************************************
+ *
+ *     Author     : Arthas 
+ *     E-mail     : arthas@gmail.com
+ *     DateTime   : 2017-08-10  09:43:22
+ *     Description: 函数封装
+ *
+ *****************************************
+-->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src="js/kjlib.js"></script>
+	<style>
+	*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style:none;
+}
+ul li{
+    float:left;
+    cursor:pointer;
+}
+.lf{
+	float: left;
+}
+.rt{
+	float: right;
+}
+.jz{
+	position: absolute;
+	top: 0;left: 0;bottom: 0;right: 0;
+	margin: auto;
+}
+.lrjz{
+	position: absolute;
+	left: 0;right: 0;
+	margin: auto;
+}
+.tbjz{
+	position: absolute;
+	top: 0;bottom: 0;
+	margin: auto;
+}
+	#box{
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		background: red;
+		
+	}
+		/*侧边栏*/
+			.tool{
+				
+				width: 51px;
+				height:230px;
+				float: right;
+				position:fixed;
+				right:90px;
+				top:360px;
+				
+			}
+			.tool2{
+				right: 500px;
+			}
+			.tool ul li{
+				width:51px;
+				height:51px;
+				list-style: none;
+				background-image:url(img/toolbar.png);
+				margin:5px 0px;
+				border-radius: 10px;
+				
+			}
+			.tt1{
+				background-position: 0px -12px;
+				transition: all 0.3s;
+			}
+			.tt1:hover{
+				background-position: 0px -73px;
+			}
+			
+			.tt2{
+				background-position: 0px -137px;
+				transition: all 0.3s;
+			}
+			.tt2:hover{
+				background-position: 0px -200px;
+			}
+			
+			.tt3{
+				background-position: 0px -261px;
+				transition: all 0.3s;
+			}
+			.tt3:hover{
+				background-position: 0px -324px;
+			}
+			
+			.tt4{
+				background-position: 0px -385px;
+				transition: all 0.3s;
+			}
+			.tt4:hover{
+				background-position: 0px -448px;
+			}
+			.hh{
+				margin-left:-200px;
+				margin-top:-140px;
+				opacity:0;
+				transform-origin: right bottom;
+				transform:scale(0.01);
+				transition: all 0.3s;
+			}
+	.tool2 b{
+		position: absolute;
+		display: block;
+		width: 50px;
+		height: 50px;
+		left: 0px;
+		font-size: 20px;
+		color: #fff;
+		text-align: center;
+		line-height: 50px;
+		background: red;
+		border-radius: 10px;
+		z-index: -1;
+	}
+	</style>
+	<script type="text/javascript">
+window.onload=function(){
+	
+
+	kj("#box").onclick=function(){
+		myMove(kj("#box"),'left',500,35);
+	}
+	
+
+	// moveOut(kj(".tt1")[1]);
+	// moveOut(kj(".tt2")[1]);
+	// moveOut(kj(".tt3")[1]);
+	// moveOut(kj(".tt4")[1]);
+	// function moveOut(a){
+	// 	var bbb=a.getElementsByClassName("bb")[0];
+
+	// 	a.addEventListener('mouserover',function(){},false);
+	// 	a.onmouseover=function(){
+	// 		myMove(bbb,'left',-50,10);
+	// 	}
+	// 	a.onmouseout=function(){
+	// 		myMove(bbb,'left',0,10);
+	// 	}
+	// }
+
+
+kj("#box").addEventListener("mouserover",function(){
+	alert("dsc");
+	// var bbb=this.getElementsByClassName("bb")[0];
+	// myMove(bbb,'left',-50,10);
+
+},false);
+
+
+
+}
+	</script>
+</head>
+<body id="body">
+	<div id="box"></div>
+	<div class="tool">
+	    	<ul>
+	    		<a href="lbt.html"> <li class="tt1" ></li></a>
+	    		<li class="tt2" ></li>
+	    		<li class="tt3" ></li>
+	    		<li class="tt4" onmouseover="document.getElementById('hh').style.transform='scale(1)';document.getElementById('hh').style.opacity='1';"
+	    			onmouseout="document.getElementById('hh').style.transform='scale(0.01)';document.getElementById('hh').style.opacity='0';">
+	    			<img class="hh" id="hh" src="img/weixine.jpg"/>
+	    		</li>
+	    	</ul>
+	</div>
+
+	<div class="tool tool2">
+	    	<ul>
+	    		<a href="lbt.html"> <li class="tt1" ><b class="bb">1</b></li></a>
+	    		<li class="tt2" ><b class="bb">2</b></li>
+	    		<li class="tt3" ><b class="bb">3</b></li>
+	    		<li class="tt4" ><b class="bb">4</b></li>
+	    	</ul>
+	    </div>
+
+
+</body>
+</html>

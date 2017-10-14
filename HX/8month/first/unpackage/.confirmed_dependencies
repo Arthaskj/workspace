@@ -1,0 +1,103 @@
+{
+	"index.html": {
+		"href": "index.html",
+		"resources": [
+			"css/mui.min.css",
+			"css/app.css",
+			"css/icons-extra.css",
+			"js/mui.min.js",
+			"js/jquery-kj.js",
+			"js/update.js",
+			"js/index.js",
+			"images/Alogo.png",
+			"images/logo.png",
+			"images/yuantiao.jpg",
+			"images/muwu.jpg",
+			"images/shuijiao.jpg",
+			"fonts/mui-icons-extra.ttf",
+			"fonts/mui.ttf",
+			"card.html",
+			"html/card.html"
+		],
+		"refer": [
+			"card.html",
+			"html/card.html",
+			"login/login.html"
+		],
+		"priority": 0
+	},
+	"card.html": {
+		"resources": [
+			"js/jquery-kj.js",
+			"fonts/mui-icons-extra.ttf",
+			"images/muwu.jpg",
+			"images/yuantiao.jpg",
+			"images/logo.png",
+			"fonts/mui.ttf",
+			"images/shuijiao.jpg",
+			"js/index.js",
+			"images/Alogo.png",
+			"css/app.css",
+			"css/mui.min.css",
+			"js/update.js",
+			"css/icons-extra.css",
+			"js/mui.min.js"
+		]
+	},
+	"html/card.html": {
+		"resources": [
+			"fonts/mui-icons-extra.ttf",
+			"css/app.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/icons-extra.css",
+			"js/jquery-kj.js",
+			"js/mui.min.js",
+			"js/update.js",
+			"js/index.js",
+			"images/muwu.jpg",
+			"images/yuantiao.jpg",
+			"images/logo.png",
+			"images/shuijiao.jpg",
+			"images/Alogo.png",
+			"js/card.js"
+		],
+		"refer": [
+			"login/login.html"
+		]
+	},
+	"login/setting.html": {
+		"resources": [
+			"login/fonts/mui.ttf",
+			"login/libs/easymob-webim-sdk/strophe-custom-2.0.0.js",
+			"login/css/feedback-page.css",
+			"login/js/mui.locker.js",
+			"login/js/feedback-page.js",
+			"login/libs/easymob-webim-sdk/easemob.im-1.0.5.js",
+			"login/js/feedback.js",
+			"login/libs/easymob-webim-sdk/json2.js",
+			"login/js/mui.view.js",
+			"login/libs/easymob-webim-sdk/jquery-1.11.1.js"
+		]
+	},
+	"login/main.html": {
+		"refer": [
+			"login/setting.html"
+		]
+	},
+	"login/login.html": {
+		"resources": [
+			"login/js/mui.enterfocus.js",
+			"login/js/app.js",
+			"login/css/style.css",
+			"login/js/mui.min.js",
+			"login/css/mui.min.css",
+			"login/fonts/mui.ttf"
+		],
+		"refer": [
+			"login/main.html",
+			"login/reg.html",
+			"login/forget_password.html"
+		]
+	}
+}

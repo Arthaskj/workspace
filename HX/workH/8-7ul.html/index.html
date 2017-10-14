@@ -1,0 +1,72 @@
+<!--
+ ********************************************************
+ * 作者              :Arthas
+ * E-mail            :arthaskj@gmail.com
+ * 建立时间	         :2017年08月04日 星期五 22时58分56秒
+ * 文件名            :html.tlp
+ * 描述              :
+ ********************************************************
+-->
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>demo</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src=""></script>
+<style>
+*{
+    margin:0;
+    padding:0;
+
+}
+#nav{
+    list-style:none;
+    width:100px;
+    color:#fff;
+    background:red;
+}
+</style>
+    <script>
+window.onload=function(){
+
+    var oNav  = document.getElementById("nav");
+    var oNews = document.getElementById("news");
+    var oH2   = document.getElementsByTagName("h2");
+    
+    oNav.onmouseover = function(){
+        oNews.style.display = "block";
+        oH2[0].style.background = "blue";
+    }
+
+    oNav.onmouseout = function(){
+        oNews.style.display = "none";
+        oH2[0].style.background = "red";
+    }
+
+}
+
+
+    </script>
+</head>
+<body>
+	<!--头部-->
+    <ul id="nav">
+        <li>
+            <h2>新闻</h2>
+        </li>
+        <li>
+            <ul id="news" style="display:none;">
+                <li>新闻1</li>
+                <li>新闻2</li>
+                <li>新闻3</li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+</body>
+</html>
+

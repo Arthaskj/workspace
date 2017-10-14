@@ -1,0 +1,110 @@
+/*
+ *这是单独为hello mui准备的个性化css，可以覆盖标准mui的css定义；
+ * 在实际项目开发时，建议为App单独写一个css文件，从而实现项目的自定义皮肤功能；
+ * 
+ * */
+.mui-plus header.mui-bar{
+	display: block;
+}
+.mui-plus .mui-bar-nav~.mui-content{
+	padding: 0;
+
+}
+
+/*hm开头的表示仅为 Hello MUI示例定义*/
+.hm-description{
+	margin: .5em 0;
+}
+
+.hm-description>li {
+	font-size: 14px;
+	color: #8f8f94;
+}
+html,
+			body {
+				background-color: #efeff4;
+				
+			}
+			
+			.mui-bar .mui-pull-left .mui-icon {
+				padding-right: 5px;
+				font-size: 28px;
+				
+			}
+			.mui-bar .mui-btn {
+				font-weight: normal;
+				font-size: 17px;
+			}
+			.mui-bar .mui-btn-link {
+				top: 1px;
+			}
+   			
+   			.mui-card-link{
+   				font-size: 25px;
+   				
+   			}
+   			.mui-off-canvas-left {
+				color: #fff;
+			}
+			.title {
+				margin: 35px 15px 10px;
+			}
+			.title+.content {
+				margin: 10px 15px 35px;
+				color: #bbb;
+				text-indent: 1em;
+				font-size: 14px;
+				line-height: 24px;
+			}
+			input {
+				color: #000;
+			}
+			
+			
+		
+			
+			.jz{
+				margin: 0 auto;
+			}
+			.content{
+				padding-bottom: 10px;
+				display: none;
+			}
+			.content_h3{
+				margin-left: 10px;
+			}
+			.content_p{
+				font-size: 18px;
+				width: 90%;
+			}
+			.comment_sub{
+				display: none;
+			}
+			.mui-input-row{
+				padding: 0px 5px;
+				height: 45px;
+			}
+			.mui-card-footer{
+				border-bottom: 1px solid #ddd;
+			}
+			#comment_area{
+				padding:5px 20px;
+				width: 100%;
+				overflow: hidden;
+			}
+			
+			#comment_area h4{
+				display: inline-block;
+				
+				color:#007aff;
+			}
+			#comment_area i{
+				display: inline-block;
+				width: 87%;
+				font-style:normal;
+				padding-left: 10px;
+				text-wrap: normal;
+				font-size: 18px;
+				
+			}
+			

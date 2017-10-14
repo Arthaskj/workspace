@@ -1,0 +1,54 @@
+ ********************************************************
+ * 作者              :Arthas
+ * E-mail            :arthaskj@gmail.com
+ * 建立时间	         :2017年08月04日 星期五 23时04分45秒
+ * 文件名            :lianxi2-8-4.html
+ * 描述              :
+ ********************************************************
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>练习2</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src=""></script>
+</head>
+<body>
+<script>
+
+var price=prompt("请输入金额：","");
+var price2;
+if(price>=100){
+	price2=price*0.8;
+}else{price2=price}
+console.log("实收金额为:"+price2);
+
+ 	
+var word=prompt("请输入留言：","");
+if(word!=""){
+	console.log(word);
+}else{
+console.log("主任很懒，什么都没留下！！！");
+}
+
+//按位运算符
+var m=5;
+var n=3;
+var r1=m&n;
+var r2=n^m;
+console.log(r1+"\n"+r2);
+
+n=n^m;
+m=m^n;
+n=n^m;
+console.log("n"+n);
+console.log("m"+m);
+
+
+</script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,151 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>demo</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src=""></script>
+
+<style>
+*{
+    margin:0;
+        padding:0;
+}
+.lf{
+    float:left;
+}
+#box{
+    position:relative;
+    top:0;bottom:0;left:0;right:0;
+    margin:auto;
+    width:1000px;
+    height:500px;
+    border:1px solid #000;
+}
+
+#sbox{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:.1;
+    display:none;
+}
+
+.set{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    width:400px;
+    height:300px;
+    border:1px solid #000;
+    display:none;
+}
+#box .set input{
+    width:100px;
+    height:30px;
+    border:1px solid #000;
+    margin-left:25px;
+}
+
+#demo{
+    width:50px;
+    height:50px;
+    margin:50px 0 0 20px;
+    border:1px solid #000;
+}
+.top{
+    margin-top:30px;
+}
+</style>
+
+    <script>
+window.onload=function(){
+    var aIpt = document.getElementsByTagName("input");
+    var oSbox = document.getElementById("sbox");
+    var oDemo = document.getElementById("demo");
+    var oSet = document.getElementsByClassName("set")[0];
+    var oSbox = document.getElementById("sbox");
+
+    aIpt[0].onclick = function(){
+        oSbox.style.display = "block";
+        oSet.style.display = "block";
+    }
+    aIpt[1].onclick = function(){
+        inputa("red");
+    };
+    aIpt[2].onclick = function(){
+        inputa("yellow");
+    }
+    aIpt[3].onclick=function(){
+        inputa("blue");
+    }
+    
+    aIpt[4].onclick=function(){
+        inputc("100");
+    }
+    aIpt[5].onclick=function(){
+        inputc("200");
+    }
+    aIpt[6].onclick=function(){
+        inputc("300");
+    }
+
+    
+    aIpt[7].onclick=function(){
+        inputb("100");
+    }
+    aIpt[8].onclick=function(){
+        inputb("200");
+    }
+    aIpt[9].onclick=function(){
+        inputb("300");
+    }
+
+    
+    aIpt[10].onclick=function(){
+        oDemo.style.width=oDemo.style.height="50px";
+        oDemo.style.background="#fff";
+    }
+
+    aIpt[11].onclick=function(){
+        oSet.style.display=oSbox.style.display="none";
+    }
+
+
+
+function inputa(a){
+        oDemo.style.background=a;
+}
+function inputb(b){
+        oDemo.style.height=b+"px";
+}
+function inputc(c){
+        oDemo.style.width=c+"px";
+}
+
+}
+    </script>
+</head>
+<body>
+    <div id="box">
+        <div id="sbox"></div>
+        <p class="lf">请为下面的DIV设置样式</p>
+        <input class="lf" style="margin-left:20px"  type="button" value="点我设置">
+        <div id="demo"></div>
+        <div class="set">
+            <div class="but">
+                <h3>背景颜色设置</h3><input type="button" value="红"><input type="button" value="黄"><input type="button" value="蓝">
+                <h3>宽度设置</h3><input type="button" value="100px"><input type="button" value="200px"><input type="button" value="300px">
+                <h3>高度设置</h3><input type="button" value="100px"><input type="button" value="200px"><input type="button" value="300px">
+                <input class="lf top" type="button"  value="恢复" name="">
+                <input class="lf top"  type="button"  value="确定" name="">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+

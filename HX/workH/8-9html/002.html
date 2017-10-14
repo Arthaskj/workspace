@@ -1,0 +1,96 @@
+<!--
+ *****************************************
+ *
+ *     Author     : Arthas 
+ *     E-mail     : arthas@gmail.com
+ *     DateTime   : 2017-08-09 15:04:55
+ *     Description: 电子时钟
+ *
+ *****************************************
+-->
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>轮播图</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src=""></script>
+	<style type="text/css">
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style:none;
+}
+ul li{
+    float:left;
+    cursor:pointer;
+}
+.lf{
+	float: left;
+}
+.rt{
+	float: right;
+}
+.jz{
+	position: absolute;
+	top: 0;left: 0;bottom: 0;right: 0;
+	margin: auto;
+}
+.lrjz{
+	position: absolute;
+	left: 0;right: 0;
+	margin: auto;
+}
+.tbjz{
+	position: absolute;
+	top: 0;bottom: 0;
+	margin: auto;
+}
+
+
+	</style>
+	<script type="text/javascript">
+	window.onload=function(){
+	var oTime = document.getElementById("time");
+	var Time = new Date();
+	var Year = Time.getFullYear();
+	var Month = Time.getMonth() +1;
+	var Day = Time.getDate();
+	var weekDay = Time.getDay() +1;
+	var Hour = Time.getHours();
+	var Minute = Time.getMinutes();
+	var sec = Time.getSeconds();
+	var Week =new Array("日","一","二","三","四","五","六")
+
+	var update=setInterval(date,1000);
+
+	function date(){
+		sec++;
+		if(sec<10 || sec==0){
+				sec="0"+sec;
+			}
+		if(sec==60){
+			sec="00";
+
+			Minute++;
+			if(Minute==60){
+				Minute="00";
+				Hour++;
+				if(Hour==24){
+				Hour="00";
+				weekDay++;
+				}
+			}
+		}
+		oTime.innerHTML = "今天是：" + Year+"年" +Month + "月" +Day + "日  星期"+ Week[weekDay]+"  "+ Hour +":"+Minute +":"+sec+"<br>";
+	}
+}
+</script>
+</head>
+<body>
+	<span id="time"></span>
+</body>
+</html>

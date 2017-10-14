@@ -1,0 +1,70 @@
+<!--
+ *****************************************
+ *
+ *     Author     : Arthas 
+ *     E-mail     : arthas@gmail.com
+ *     DateTime   : 2017-08-14  16:03:25
+ *     Description: 验证码版本3   汉字
+ *
+ *****************************************
+-->
+
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>表单验证</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src="js/kjlib.js"></script>
+	<script type="text/javascript" src="js/004.js"></script>
+	<style>
+	td{
+		padding: 5px 10px;
+	}
+	#box{
+		width: 100px;
+		height: 100px;
+		background: red;
+		left: 200px;
+		top: 500px;
+		
+	}
+	</style>
+	<script type="text/javascript">
+
+	</script>
+</head>
+<body>
+	<form id="testIdCode">
+	<table id="tab" >
+		<tr>
+			<td>用户名：</td>
+			<td><input id="user" type="text"></td>
+			<td><span>请输入用户名！</span></td>
+		</tr>
+		<tr>
+			<td>密码：</td>
+			<td><input id="pwd" type="password"></td>
+			<td><span>请输入密码！</span></td>
+		</tr>
+		<tr>
+			<td>确认密码：</td>
+			<td><input id="repwd" type="password"></td>
+			<td><span>请确认密码！</span></td>
+		</tr>
+		<tr>
+			<td>验证码：</td>
+			<td><input id="idCode" type="text"></td>
+			<td><span style="cursor:pointer">换一个</span></td>
+			<td class="idCodeVal"></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="提交"></td>
+		</tr>
+	</table>
+	</form>
+
+	<div id="box"></div>
+</body>
+</html>

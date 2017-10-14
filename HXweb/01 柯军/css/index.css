@@ -1,0 +1,143 @@
+
+#info{
+	position: relative;
+	width: 980px;
+	height: 280px;
+	clear: both;
+	top: -46px;
+	margin: 0 auto;
+}
+#info #infoD li{
+	position: relative;
+	width: 288px;
+	height: 255px;
+	border-radius: 5px;
+	padding: 10px 10px 10px 17px;
+	
+}
+#info #infoD .about{
+	background: #fff;
+	box-shadow: 0 0 10px #d6d6d6;
+	border: 1px solid #d6d6d6;
+}
+
+#info #infoD li:nth-child(2){
+	margin: 0 13px;
+}
+#info #infoD .about dl dt{
+	width: 281px;
+	height: 96px;
+	margin-top: 10px;
+	background: url(../img/aboutpic.jpg) no-repeat center;
+}
+#info #infoD .about dl dd{
+	margin-top: 9px;
+	font-size: 11px;
+	line-height: 23px;
+	color:#808080;
+}
+#info #infoD .about .viewMore{
+	position: absolute;
+	display: inline-block;
+	bottom: 20px;
+	left: 20px;
+	width: 62px;
+	height: 27px;
+	padding-left: 35px;
+	color: #635454;
+	font-size: 12px;
+	line-height: 27px;
+	background: url(../img/icon.png) no-repeat -545px -46px;
+}
+#info #infoD li:nth-child(3){
+	padding: 0;
+}
+
+#connect .infoBlock{
+	display: inline-block;
+	width: 319px;
+	height: 129px;
+	padding-top: 2px 0 0 2px ;
+	border-radius: 5px;
+	background: #df4248;
+}
+#info #infoD #connect .infoBlock li{
+	width: 105px;
+	height: 63px;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	/*background: #df4248;*/
+}
+#info #infoD #connect .infoBlock li:hover{
+	background: #f6bf00;
+}
+#info #infoD #connect .infoBlock .libr{
+	border-right: 1px solid #dc4d51;
+}
+#info #infoD #connect .infoBlock .lib{
+	border-bottom: 1px solid #dc4d51;
+}
+#info #infoD #connect #cont{
+	width: 316px;
+	height: 128px;
+	margin-top: 5px;
+	border-radius: 5px;
+	
+	border: 1px solid #e7e7e7;
+
+}
+#info #infoD #connect #cont li{
+	width: 316px;
+	height: 43px;
+	margin: 0;
+	padding: 0;
+	line-height: 43px;
+	border-radius: 0;
+	color: #b1aab7;
+	font-size: 13px;
+}
+#info #infoD #connect #cont li:nth-child(2){
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+}
+#info #infoD #connect #cont li b{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-left: 10px;
+	padding-left: 20px;
+	
+}
+#phone b{
+	background: url(../img/icon.png) no-repeat -979px -30px;
+}
+#email b{
+	background: url(../img/icon.png) no-repeat -976px -120px;
+}
+#address b{
+	background: url(../img/icon.png) no-repeat -979px -77px;
+}
+
+#link{
+	position: relative;
+	width: 980px;
+	height: 110px;
+	clear: both;
+	margin: 0 auto;
+
+}
+#link #linkL{
+	width: 980px;
+	height: 80px;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+}
+#link #linkL li{
+	margin-top: 21px;
+	width: 115px;
+	height: 38px;
+	background: url(../img/link_03.jpg) no-repeat center;
+}
+
+

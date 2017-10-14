@@ -1,0 +1,48 @@
+/*
+ *****************************************
+ *
+ *     Author     : Arthas 
+ *     E-mail     : arthas@gmail.com
+ *     DateTime   : 2017-08-15  09:08:02
+ *     Description: classNote
+ *
+ *****************************************
+*/
+
+//判断字符中有没有大小写字母
+charAt(3) ----------- 返回指定位置的字符(从0开始取值)
+charCodeAt ----------- 返回指定位置的字符的ASCII码
+a=97 z=122  A=65  Z=90  0=48  9=57
+
+
+replace() --------- 用一些字符替代另一些字符     替换关键字
+var str="TMD,混蛋";
+document.write(str.replace(/TMD/,"***"));
+
+
+str=0123456789;
+str(substring(2,7)); ---------- 选择23456  顾头不顾尾
+
+split() ---------- 把一个字符串风格成字符串数组
+str.split(",");
+var arrStr = str.split(","); ---------- 直接赋值给数组
+
+indexOf() --------- 返回字符串里是否存在某值，不存在返回 -1，存在返回位置，从0开始
+
+toLowerCase() -------- 转换为小写字母
+toUpperCase() -------- 转换为大写字母
+
+
+// 正则表达式
+	var Rnum = /[0-9]/;
+	var Rchar = /[a-z]/;
+	var RChar = /[A-Z]/;
+
+// 验证密码中是否存在大写小写和数字
+		var flag = Rnum.test(pwd.value);
+		var flag1= Rchar.test(pwd.value);
+		var flag2= RChar.test(pwd.value);
+
+
+
+

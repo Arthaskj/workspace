@@ -1,0 +1,273 @@
+#top_box,#foot_box,#foot{
+	margin:0 auto;
+	overflow:hidden;
+}
+#main_box{
+	margin:0 auto;
+}
+#top_box,#foot{
+	width:1350px;
+}
+#main_box{
+	width:990px;
+}
+#foot_box{
+	width:1100px;
+}
+/*LOGO 和 导航 */
+#logo{
+	/*高度，背景颜色，上下内边距 */
+	height:74px;
+	background:#EDEEF2;
+	padding:20px 0 10px 0;
+}
+#logo div.nav{
+	/*宽度，高度，背景颜色，水平居中对齐*/
+	width:990px;
+	height:74px;
+	background:#565B61;
+	margin:0 auto;
+}
+#logo div.nav ul{
+	background:#424242;
+}
+#logo div.nav li{
+	float:left;
+}
+#logo div.nav li a{
+	/*左浮动，宽度，高度，行高，文字颜色，加粗*/
+	float:left;
+	padding:0 15px;
+	height:74px;
+	line-height:74px;
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+}
+#logo div.nav li a:hover{
+	color:#5D6925;
+	background:#FFEA01;
+}
+#logo div.nav a.rt{
+	margin:30px 10px 0 0;
+}
+/*吃西瓜*/
+#banner{position:relative;}
+#banner a{
+	position:absolute;
+	top:-20px;
+	left:0px;
+}
+/*2015年中促*/
+img{vertical-align:bottom;}
+#promotion{
+	/*高度，背景*/
+	height:100px;
+	background:#EDEEF2;
+	/*相对定位*/
+	position:relative;
+}
+#promotion div.content{
+	/*边框，背景，宽度，高度*/
+	border:2px solid #DEB332;
+	background:#fff;
+	width:986px;
+	height:120px;
+	/*绝对定位*/
+	position:absolute;
+	left:180px;
+	bottom:0px;
+}
+#promotion h1{
+	/*文字大小，水平居中，上下内边距，颜色*/
+	font-size:30px;
+	text-align:center;
+	padding:15px 0;
+	color:#DDA912;
+}
+#promotion p{
+	/*宽度，水平居中，文本水平居中，颜色，左右内边距，左右边框*/
+	width:288px;
+	margin:0 auto;
+	text-align:center;
+	color:#E3B217;
+	padding:0 15px;
+	border:1px solid #FEFAF0;
+	border-top:0;
+	border-bottom:0;
+}
+#promotion a{
+	/*内边距，背景颜色，文字加粗，文字大小，颜色，*/
+	padding:2px 6px;
+	background:#502A03;
+	font-weight:bold;
+	font-size:14px;
+	color:#fff;
+	text-decoration:none;
+	/*绝对定位*/
+	position:absolute;
+	right:30px;
+	bottom:15px;
+}
+#promotion a i{
+	display:inline-block;
+	height:0px;
+	border:5px solid transparent;
+	border-left-color:#fff;
+}
+/*秋季时尚风向标*/
+#fashion{
+	/*高度，背景，上下外边距*/
+	height:89px;
+	background:#555A60;
+	margin:20px 0 5px 0;
+}
+#fashion div.content{
+	/*宽度，水平居中，overflow*/
+	width:960px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#fashion div.content p{
+	background:#FFE900;
+	padding:0 20px;
+	height:89px;
+	line-height:89px;
+	float:right;
+	color:#6B682D;
+	font-size:14px;
+}
+#fashion div.content div{
+	/*左浮动，左外边距*/
+	float:left;
+	margin-left:10px;
+	color:#fff;
+}
+#fashion div.content div h1{
+	padding:10px 0;
+}
+/*夏季热卖*/
+#summer_hot{
+	height:320px;
+	background:#EFEFEF;
+}
+#summer_hot div.content{
+	/*宽度，高度，水平居中*/
+	width:988px;
+	height:320px;
+	margin:0 auto;
+}
+/*在售商品*/
+#goods_sales{
+	margin-top:30px;
+}
+#goods_sales p{
+	float:left;
+	width:200px;
+	border-top:1px solid #D9D9D9;
+	margin-top:15px;
+}
+#goods_sales div{
+	float:left;
+	/*宽度，文字水平居中对齐*/
+	width:590px;
+	text-align:center;
+}
+#goods_sales div a{
+	color:#666;
+	text-decoration:none;
+}
+/*大表哥*/
+#tbl{
+	width:993px;
+	/*边框，边框合并，固定表格布局*/
+	border:1px solid #ddd;
+	border-collapse:collapse;
+	table-layout:fixed;
+	margin-top:20px;
+}
+#tbl td{
+	/*边框，宽度，高度，水平居中，加粗*/
+	border:1px solid #ddd;
+	width:247px;
+	height:80px;
+	text-align:center;
+	font-weight:bold;
+	font-size:14px;
+	padding:0;
+}
+/*编辑推荐*/
+#editor_choice{
+	margin-top:15px;
+	overflow:hidden;
+}
+#editor_choice div,#hot_selling div.rt{
+	/*宽度，左浮动*/
+	width:240px;
+	float:left;
+}
+#editor_choice div p,#hot_selling div.rt p{
+	/*高度，背景颜色*/
+	height:5px;
+	background:#ddd;
+	margin-top:20px;
+	position:relative;
+}
+#editor_choice div p a,#hot_selling div.rt p a{
+	/*绝对定位，宽度，高度，背景*/
+	position:absolute;
+	right:0;
+	top:0;
+	width:38px;
+	height:38px;
+	background:url(images/only_39.png) no-repeat -38px 0;
+}
+#editor_choice div p a.lf_btn,#hot_selling div.rt p a.lf_btn{
+	right:38px;
+	background-position:0 0;
+}
+#editor_choice ul{
+	/*左浮动，左外边距*/
+	float:left;
+	margin-left:10px;
+	width:240px;
+	text-align:right;
+}
+#editor_choice ul li{
+	margin-bottom:10px;
+}
+#editor_choice ul li img{
+	border:1px solid transparent;
+}
+#editor_choice ul li img:hover{
+	border-color:black;
+}
+/*明星单品*/
+#hot_selling{
+	margin-top:20px;
+	overflow:hidden;
+}
+#hot_selling div.img_list{
+	margin-right:10px;
+	float:left;
+}
+#hot_selling div.img_list li{
+	float:left;
+	padding-top:8px;
+}
+#hot_selling div.img_list li.mid{
+	margin:0 7px;
+}
+#hot_selling div.img_list li:hover{
+	/*背景，鼠标*/
+	background:url(images/only_1024.png) no-repeat center top;
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+

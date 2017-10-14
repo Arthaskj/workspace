@@ -1,0 +1,72 @@
+<!--
+ *****************************************
+ *
+ *     Author     : Arthas 
+ *     E-mail     : arthas@gmail.com
+ *     DateTime   : 2017-08-10  17:25:14
+ *     Description: 
+ *
+ *****************************************
+-->
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src="js/kjlib.js"></script>
+	<style>
+	.box{
+		position: relative;
+		width: 200px;
+		height: 50px;
+		background: yellow;
+		margin: 5px 0;
+	}
+	</style>
+	<script type="text/javascript">
+window.onload=function(){
+	var n=0;
+	var m=0;
+
+	kj("#copy").onclick=function(){
+		box();
+		huan();
+		setTimeout(huanl,2000);
+		
+	}
+	
+	function box(){
+		for(var i=0;i<11;i++){
+		str="<div class=\"box\">"+i+"</div>";
+		kj("body")[0].innerHTML+=str;
+		}
+			
+	}
+	
+	function huan(){
+		myMove(kj(".box")[n],'left',300,50);
+		n++;
+		if(n>=11){
+			n=0;
+		}
+		setTimeout(huan,50);
+	}
+	function huanl(){
+		myMove(kj(".box")[m],'left',0,50);
+		m++;
+		if(m>=11){
+			m=0;
+		}
+		setTimeout(huanl,50);
+	}
+
+
+
+}
+	</script>
+</head>
+<body>
+	<input id="copy" type="button" value="盒子复制">
+</body>
+</html>

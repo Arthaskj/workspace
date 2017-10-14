@@ -1,0 +1,15 @@
+/*通用样式*/
+body{
+	font:12px "microsoft yahei";
+	margin:0;
+	padding:0;
+}
+p,h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+.overflow{overflow:hidden;}

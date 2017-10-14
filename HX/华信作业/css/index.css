@@ -1,0 +1,581 @@
+*{
+	padding: 0;
+	margin: 0;
+
+}
+
+#body1,.sleep ,.sleepbox,.sleepimg,.sleepbox3
+,.shutdown,.shutdown span,.shutdown .waiting
+,.startlogo,.startlogo .startimg,.startbar
+,#about,.aboutbg
+,.bg,.toolbar
+,.exitnownode{
+	top: 0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+/*强制关机操作*/
+.exitnownode{
+	position: fixed;
+	width: 400px;
+	height: 150px;
+	background:#f7f7f7;
+	border-radius: 10px;	
+	display: none;
+	z-index: 3;
+	
+}
+.exitnownode h3{
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.exitnownodeno {
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+}
+.exitnownodeyes {
+	position: absolute;
+	bottom: 10px;
+	right: 60px;
+}
+#body1{
+width: 1280px;
+	height:700px;
+}
+
+/*睡眠状态*/
+.sleep{
+	position: fixed;
+	width: 1280px;
+	height:700px;
+	background: url(../img/bodybg.jpg) ;
+	text-align: center;
+	z-index: 4;
+	display: none;
+}
+.sleep:before{
+	position: absolute;
+	content: "";
+	width:1280px;
+	height: 700px;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);	
+}
+
+.sleepbox{
+left: 150px;
+position: absolute;
+display: none;
+width: 280px;
+height: 150px;
+background: rgba(255,255,255,.4);
+border-radius: 20px;
+opacity: 1;
+}
+.sleepbox1{
+	display: block;
+	float: left;
+	padding-left: 20px;
+	margin-top: 20px;
+	color: #efefef;
+	font-weight: bold;
+}
+.sleepbox2{
+	position: relative;	
+	float: left;
+	display: block;
+	margin-top: 20px;
+	margin-right: 20px;
+	padding-left: 5px;
+	width: 150px;
+	height: 20px;
+	font-size: 15px;
+	border-radius: 10px;
+	border: 1px solid #ccc ;
+}
+.sleepbox3{
+	position: absolute;
+	top:100px;
+	width: 50px;
+	height: 30px;
+	border-radius: 10px;
+	border: 1px solid #ccc ;
+}
+.sleep .sleepimg{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: url(../img/sleepimg.jpg) no-repeat center/cover;
+	border-radius: 10px;
+	border: 2px solid #fff ;
+	box-shadow: 0 0 5px #ccc;
+	z-index: 5;
+	transition: all 0.5s;
+}
+.sleep .sleepimg:hover{
+	box-shadow: 0 0 30px #ccc;
+}
+
+/*关机不显示*/
+.shutdown{
+	position: fixed;
+	top:-16px;
+	width: 1280px;
+	height:680px;
+	background: #000;
+	opacity: 0.6;
+	text-align: center;
+	z-index: 4;
+	display: none;
+}
+.shutdown span{
+	position: absolute;
+	top: -150px;
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #ccc;
+	font-size: 20px;
+	z-index: 4;
+}
+.shutdown .waiting{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	background: url(../img/waiting1.png) no-repeat center/cover;
+}
+
+/*开机动画*/
+.startlogo{
+	position: fixed;
+	width: 1280px;
+	height:700px;
+	background: #000;
+	text-align: center;
+	z-index: 4;
+display: none;
+}
+.startlogo .startimg{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: url(../img/startlogo.png);
+	z-index: 4;
+	transition: 0.5;
+}
+ 
+.startbar{
+	position: absolute;
+	width: 250px;
+	height: 3px;
+	border: 2px solid #fff;
+	border-radius: 20px;
+	opacity: 0;
+	transition: 2s;
+}
+.startbar2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	width: 0px;
+	height: 3px;
+	background: #fff;
+	border-radius: 20px;
+	transition: all 5s;
+}
+
+
+/*关于电脑*/
+#about{
+	position: fixed;
+	width: 700px;
+	height:500px ;
+	background: #f7f7f7;
+	border-radius: 8px 8px 0 0;
+	box-shadow: 0 0 3px #000;
+	z-index: 3;
+	display: none;
+}
+.aboutbg{
+	position: absolute;
+	top:30px;
+	width: 600px;
+	height: 470px;
+	text-align: center;
+	
+}
+#about:before{
+	content: "";
+	position:absolute;
+	width: 100%;
+	height: 30px;
+	top:0;
+	left: 0;
+	border-radius: 8px;
+	background: #ddd;
+	
+}
+#about span{
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	right: 0;
+	font-size: 18px;
+	color: #555;
+	font-family:  NSimSun;
+	font-weight: bold;
+	margin: auto;
+	display: block;
+	width: 80px;
+	height: 20px;
+	z-index: 4;
+}
+#about ul{
+	list-style: none;
+	margin-top: 7px;
+	z-index: 4;
+}
+#about ul li{
+	position: relative;
+	width: 15px;
+	height: 15px;
+	display: block;
+	border-radius: 50%;
+	float: left;
+	margin-left: 5px;
+	cursor: pointer;
+	box-shadow: 0 0 5px #fff;
+	opacity: 0.7;
+}
+#about ul li:hover{
+	opacity: 1;
+}
+#about ul li p{
+	text-align: center;
+	font-size: 15px;
+	line-height: 15px;
+}
+#about ul li:nth-child(1){
+	background: greenyellow;
+	font-weight: bold;
+}
+#about ul li:nth-child(2){
+	background: yellow;
+	font-weight: bold;
+	transform: rotate(-45deg);
+	
+}
+#about ul li:nth-child(3){
+	background: red;
+	transform: rotate(45deg);
+}
+
+
+/*背景图片*/
+.bg{
+	position: relative;
+	top: 50px;
+	width: 1280px;
+	height:678px;
+	background: url(../img/bodybg.jpg) no-repeat ;
+	
+}
+
+
+/*顶层工具栏*/
+.toolbar{
+	position: relative;
+	width:1279px;
+	height:20px;
+	background:rgba(256,256,256,1);
+	box-shadow: 0 0 5px #000;
+	border-radius: 4px;
+}
+.toolbar ul{
+	position: absolute;
+	list-style: none;
+	margin: auto;
+}
+.toolbar .toolbarright{
+	position: absolute;
+	list-style: none;
+	top: 0;
+	bottom: 0;
+	right: 15px;
+	margin: auto;
+	
+}
+.toolbar .toolbarright li{
+	display: block;
+	float: left;
+	margin-left:10 px;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	
+}
+.toolbar .toolbarright li {
+	display: block;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	opacity: 0.7;
+	background-image: url(../img/barico.png);
+	
+}
+.toolbar .toolbarright  li:nth-child(1){
+		
+	background-position: -2px -4px;
+	transform: scale(1.1);
+}
+.toolbar .toolbarright li:nth-child(2){
+		
+	background-position: -95px -4px;
+	transform: scale(1.1);
+}
+.toolbar .toolbarright li:nth-child(3){
+	background-position: -157px -4px;
+	transform: scale(1.1);
+}
+.toolbar .toolbarright li:nth-child(4){
+	background-position: -775px -4px;
+	transform: scale(1.1);
+}
+.toolbar .toolbarright li:nth-child(5){
+	background-position: -375px -4px;
+	transform: scale(1.1);
+}
+.toolbar .toolbarright  li:nth-child(6){
+		
+	background-position: -525px -6px;
+	transform: scale(1.1);
+}
+.toolbar .toolbarright li:nth-child(7){
+		
+	background-position: -560px -6px;
+	transform: scale(1.1);
+}
+.toolbar .toolbarright li:nth-child(8){
+	background-position: -470px -4px;
+	transform: scale(1.1);
+}
+.toolbar .toolbarright li:nth-child(9){
+	background-position: -345px -4px;
+	transform: scale(1.1);
+}
+.toolbar .toolbarright li:nth-child(10){
+	background-position: -590px -6px;
+	transform: scale(1.1);
+}
+.toolbar .toolbarright li:hover{
+	opacity: 1;
+}
+.toolbar ul li{
+	display: block;
+	float: left;
+	cursor: pointer;
+	width: 40px;
+	height: 20px;
+	text-align: center;
+}
+.toolbar ul:nth-child(1) li:hover{
+	background: #ccc;
+}
+.toolbar ul li p{
+	
+	font-family:  STXinwei;
+	line-height: 20px;
+}
+.toolbar ul li #apple{
+	position: absolute;
+	width: 180px;
+	height:235px;
+	margin-top:-4px;
+	background: #fff;
+	opacity: 0.9;
+	transition: 0.5s;
+	display: none;
+	opacity: 0.7;
+}
+
+.toolbar ul li #apple li {
+	position: relative;
+	display: block;
+	width: 180px;
+	height: 25px;
+	background: #fff;
+	cursor: pointer;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+	margin-left: 0px;
+}
+.toolbar ul li #apple li p{
+	padding-left: 10px;
+	font-size: 15px;
+	line-height: 25px;
+}
+.toolbar ul li #apple li #systemper2 ul li{
+	position: relative;
+	display: block;
+	width: 150px;
+	height: 25px;
+	background: #fff;
+	cursor: pointer;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	opacity: 0.9;
+}
+.toolbar ul li #apple li #systemper2 ul li p{
+	
+	padding-left: 10px;
+	line-height: 25px;
+}
+.toolbar ul li #apple li #historypro2 ul li{
+	position: relative;
+	display: block;
+	width: 150px;
+	height: 25px;
+	background: #fff;
+	cursor: pointer;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+.toolbar ul li #apple li #historypro2 ul li p{
+	
+	padding-left: 10px;
+	line-height: 25px;
+}
+.toolbar ul li #apple li p{
+	font-size: 10px;
+	font-family: "微软雅黑";
+	display: block;
+}
+
+.toolbar ul li #apple li p:hover{
+	background: #ccc;
+}
+.toolbar ul li #apple li p span{
+	font-size: 18px;
+}
+
+
+/*底层菜单栏*/
+.iconH{
+	margin-top: 30px;
+	transform:scale(1.7);
+}
+.iconH2{
+	margin-top: 40px;
+	transform:scale(1.4);
+}
+.iconH3{
+	margin-top: 55px;
+	transform:scale(1.3);
+}
+.icon{
+	margin-top: 60px;
+	transform:scale(1);
+}
+
+.barbg{
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 20px;
+	margin: auto;
+	width:700px;
+	height: 120px;
+	background: url(../img/barbg.png);
+	z-index: 3;
+	display: block;
+}
+.barbg ul{
+	position: relative;
+	list-style: none;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+.barbg ul li{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-top:60px;
+	transition: all 0.5s;
+}
+.barbg ul li:hover{
+	
+	transition: all 0.5s;
+}
+.barbg ul li:nth-child(1){
+	background: url(../img/2.png) no-repeat center/cover;
+	margin-left: 30px;
+}
+.barbg ul li:nth-child(2){
+	background: url(../img/3.png) no-repeat center/cover;
+}
+.barbg ul li:nth-child(3){
+	background: url(../img/4.png) no-repeat center/cover;
+}
+.barbg ul li:nth-child(4){
+	background: url(../img/5.png) no-repeat center/cover;
+}
+.barbg ul li:nth-child(5){
+	background: url(../img/6.png) no-repeat center/cover;
+}
+.barbg ul li:nth-child(6){
+	background: url(../img/7.png) no-repeat center/cover;
+}
+.barbg ul li:nth-child(7){
+	background: url(../img/8.png) no-repeat center/cover;
+}
+.barbg ul li:nth-child(8){
+	background: url(../img/9.png) no-repeat center/cover;
+}
+.barbg ul li:nth-child(9){
+	background: url(../img/a.png) no-repeat center/cover;
+}
+.barbg ul li:nth-child(10){
+	background: url(../img/b.png) no-repeat center/cover;
+}
+
+/*旋转特效——用在关机动画*/
+.rot{
+	animation:rot 1s linear infinite;
+	-webkit-animation: rot 1s linear  infinite ;
+	-moz-animation:rot 1s linear infinite;
+	-ms-animation:rot 1s linear infinite;
+	-o-animation:rot 1s linear infinite;
+}
+
+@keyframes rot{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+@-webkit-keyframes rot{
+	from{-webkit-transform: rotate(0deg);}
+	to{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes rot{
+	from{-moz-transform: rotate(0deg);}
+	to{-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes rot{
+	from{-ms-transform: rotate(0deg);}
+	to{-ms-transform: rotate(360deg);}
+}
+@-o-keyframes rot{
+	from{-o-transform: rotate(0deg);}
+	to{-o-transform: rotate(360deg);}
+}

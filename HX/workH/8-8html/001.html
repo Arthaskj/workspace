@@ -1,0 +1,209 @@
+
+
+
+<!--
+ ********************************************************
+ * 作者              :Arthas
+ * E-mail            :arthaskj@gmail.com
+ * 建立时间	         :2017年08月08日 星期二 09时26分52秒
+ * 文件名            :001.html
+ * 描述              :setInterval的使用，作用于轮播图
+ ********************************************************
+-->
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>轮播图</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src=""></script>
+    <style>
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style:none;
+}
+ul li{
+    float:left;
+    cursor:pointer;
+}
+#box{
+    position:relative;
+    top:0;left:0;bottom:0;right:0;
+    margin:auto;
+    width:500px;
+    height:350px;
+}
+
+#box input{
+    position:absolute;
+    width:50px;
+    height:70px;
+    text-aligh:center;
+    line-height:70px;
+    border:1px solid #ddd;
+    background:##eee;
+    margin:auto;
+}
+#box img{
+    position:absolute;
+}
+#box input:nth-child(2){
+    top:0;bottom:0;left:0;
+}
+#box input:nth-child(3){
+    top:0;bottom:0;right:0;
+}
+
+#list{
+    margin-top:20px;
+    height:260px;
+}
+#list li{
+    width:200px;
+    height:150px;
+}
+#list li:nth-child(1){
+    background:url(img/1.png)no-repeat center;
+}
+#list li:nth-child(2){
+    background:url(img/2.png)no-repeat center;
+}
+#list li:nth-child(3){
+    background:url(img/3.png)no-repeat center;
+}
+#list li:nth-child(4){
+    background:url(img/4.png)no-repeat center;
+}
+#list li:nth-child(5){
+    background:url(img/5.png)no-repeat center;
+}
+
+#num{
+    position:absolute;
+    width:130px;
+    height:20px;
+    bottom:10px;left:0;right:0;margin:auto;
+}
+#num .num{
+    width:20px;
+    height:20px;
+    color:#fff;
+    text-align:center;
+    line-height:20px;
+    border-radius:50%;
+    margin:0 0 0 5px;
+    background:#999;
+}
+.redBorder{
+    border:2px solid red;
+}
+
+    
+    </style>
+
+
+    <script>
+    window.onload=function(){
+        var oImg = document.getElementsByTagName("img");
+        var oList = document.getElementsByClassName("list");
+        var oNum = document.getElementsByClassName("num");
+        var oIpt = document.getElementsByTagName("input");
+        var arrimg = new Array("img/1.png","img/2.png","img/3.png","img/4.png","img/5.png");
+        var num = 0;
+ 
+var timer=setInterval(timeChange,1000);
+
+oImg[0].onmouseover=function(){
+    clearInterval(timer);
+}
+oImg[0].onmouseout=function(){  
+    timer=setInterval(timeChange,1000);
+}
+
+function timeChange(){
+    change();
+}
+
+function change(){
+    if(num<arrimg.length-1){
+        num++;
+        oImg[0].src=arrimg[num];
+        for(var i=0;i<oList.length;i++){
+            oList[i].style.border="none";
+            oNum[i].style.background="#999";
+        }
+        oList[num].style.border="2px solid red";
+        oNum[num].style.background="#ccc";
+    }else{
+        num=0;
+        oImg[0].src=arrimg[num];
+        for(var i=0;i<oList.length;i++){
+            oList[i].style.border="none";
+            oNum[i].style.background="#999";
+        }
+        oList[num].style.border="2px solid red";
+        oNum[num].style.background="#ccc";
+    }
+    
+}
+
+oIpt[0].onclick=function(){
+    if(num>0 ){
+        num--;
+        oImg[0].src=arrimg[num];
+         for(var i=0;i<oList.length;i++){
+            oList[i].style.border="none";
+            oNum[i].style.background="#999";
+        }
+        oList[num].style.border="2px solid red";
+        oNum[num].style.background="#ccc";
+    }else{
+        num=4;
+        oImg[0].src=arrimg[num];
+         for(var i=0;i<oList.length;i++){
+            oList[i].style.border="none";
+            oNum[i].style.background="#999";
+        }
+        oList[num].style.border="2px solid red";
+        oNum[num].style.background="#ccc";
+    }
+}
+oIpt[1].onclick=function(){
+    change();
+}
+
+
+
+}
+
+    </script>
+</head>
+<body>
+    <div id="box">
+        <img src="img/1.png" width="500px" height="350px">
+        <input type="button" value="《">
+        <input type="button" value="》">
+        <ul id="num">
+            <li class="num" style="background:#ccc">1</li>
+            <li class="num">2</li>
+            <li class="num">3</li>
+            <li class="num">4</li>
+            <li class="num">5</li>
+        </ul>
+    </div>
+    <ul id="list">
+        <li class="list" style="border:2px solid red"></li>
+        <li class="list"></li>
+        <li class="list"></li>
+        <li class="list"></li>
+        <li class="list"></li>
+    </ul>
+
+
+</body>
+</html>
+

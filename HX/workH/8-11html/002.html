@@ -1,0 +1,120 @@
+<!--
+ *****************************************
+ *
+ *     Author     : Arthas 
+ *     E-mail     : arthas@gmail.com
+ *     DateTime   : 2017-08-11  10:47:27
+ *     Description: 
+ *
+ *****************************************
+-->
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src="js/kjlib.js"></script>
+	<style>
+	*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style:none;
+}
+ul li{
+    float:left;
+    cursor:pointer;
+}
+.lf{
+	float: left;
+}
+.rt{
+	float: right;
+}
+.jz{
+	position: absolute;
+	top: 0;left: 0;bottom: 0;right: 0;
+	margin: auto;
+}
+.lrjz{
+	position: absolute;
+	left: 0;right: 0;
+	margin: auto;
+}
+.tbjz{
+	position: absolute;
+	top: 0;bottom: 0;
+	margin: auto;
+}
+	#box{
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		background: red;
+		left: 200px;
+		top:10px;
+	}
+	#bar {
+		position: absolute;
+		top: 300px;
+	}
+	#bar li{
+		float: left;
+		width: 100px;
+		height: 50px;
+		background: #ddd;
+		border-top: 1px solid #000;
+		border-top-width: 10px;
+	}
+	</style>
+	<script type="text/javascript">
+	window.onload=function(){
+		//setInterval(function(){myMove(kj("#box"),'left',600,10,abc)},1000);
+			// myMove(kj("#box"),'left',900,100,xyz)
+		//setInterval(function(){myMove2(kj("#box"),'left','top',600,600,10);},1000);
+		//myMove2(kj("#box"),'left','top',900,400,10,10,xyz);
+		// function xyz(){
+		// 	alert("dsf");
+		// }
+		//myMove2(kj("#box"),'left','top',200,400,10,10);
+		//setTimeout(myMove2(kj("#box"),'left','top',800,400,10,10),3000);
+		// myMove2(kj("#box"),'left','top',200,800,10);
+		
+		myMove2(kj("#box"),'left','top',600,500,10);
+		//  function abc(){
+		// 	myMove(kj("#box"),'top',400,10);
+			
+		// }
+		// function xyz(){
+
+		// 	myMove2(kj("#box"),'left','top',200,200,10,10);
+		// }
+		// function nm(){
+		// 	alert("dsfs");
+		// 	myMove2(kj("#box"),'left','top',200,400,10,10);
+
+		// }
+
+
+
+	}
+		
+
+
+	</script>
+</head>
+<body>
+	<div id="box"></div>
+	<input id="dou" type="button" value="抖动">
+
+	<ul id="bar">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+</body>
+</html>

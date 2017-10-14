@@ -1,0 +1,43 @@
+<!--
+ *****************************************
+ *
+ *     Author     : Arthas 
+ *     E-mail     : arthas@gmail.com
+ *     DateTime   : 2017-08-17  22:22:57
+ *     Description: 随机数列
+ *     ChangeTime : 2017-08-17  22:32:49
+ *
+ *****************************************
+-->
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script type="text/javascript" src=""></script>
+	<style>
+
+	</style>
+	<script type="text/javascript">
+		var arrList = Array("saf ","2sdfs","3sdfs","sdf4","5sdfs","6sdf","7sdf","sdf8","sdf9");
+		changeArr(arrList);
+		console.log(arrList);
+		function changeArr(arrList){
+			var len = arrList.length;
+			for(var i=0;i<arrList.length;i++){
+				var num = Math.floor(Math.random()*(len-i));
+				var text = arrList[num];
+				arrList[num] = arrList[len-i-1];
+				arrList[len-i-1] = text;
+			}
+
+			
+			return arrList;
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
