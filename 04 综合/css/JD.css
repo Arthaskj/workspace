@@ -1,0 +1,80 @@
+.boxT{
+	position: relative;
+	width: 660px;
+	height: 640px;
+	
+}
+.boxT ul{
+	width: 660px;
+	height: 640px;
+	background: #dedede;
+}
+.boxT ul li{
+	width: 305px;
+	height: 190px;
+	margin: 10px 10px;
+	transition:all 0.5s;
+}
+.boxT ul li dt{
+	width: 100px;
+	height: 150px;
+	padding:20px 20px;
+	
+	text-align: center;
+	color: #efefef;
+}
+.boxT ul li dt h2{
+	display: block;
+	margin: 10px 0;
+	margin-top: 30px;
+	font-size: 20px;
+	border-bottom: 2px solid #efefef;
+	border-top: 2px solid #efefef;
+}
+
+.boxT ul li:hover{
+	background-position: -5px 0;
+}
+
+
+
+
+.boxT ul .l1 dt{
+	background: rgba(103,182,135,.9);
+}
+.boxT ul .l2 dt{
+	background: rgba(220,208,110,.9);
+}
+.boxT ul .l3 dt{
+	background: rgba(215,142,40,.9);
+}
+.boxT ul .l4 dt{
+	background: rgba(134,99,80,.9);
+}
+.boxT ul .l5 dt{
+	background: rgba(92,85,101,.9);
+}
+.boxT ul .l6 dt{
+	background: rgba(73,140,148,.9);
+}
+
+
+
+.l1{
+	background: url(../img/show_01.jpg) no-repeat center;
+}
+.l2{
+	background: url(../img/show_02.jpg) no-repeat center;
+}
+.l3{
+	background: url(../img/show_03.jpg) no-repeat center;
+}
+.l4{
+	background: url(../img/show_04.png) no-repeat center;
+}
+.l5{
+	background: url(../img/show_05.jpg) no-repeat center;
+}
+.l6{
+	background: url(../img/show_06.jpg) no-repeat center;
+}

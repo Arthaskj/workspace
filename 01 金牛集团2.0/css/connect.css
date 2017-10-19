@@ -1,0 +1,27 @@
+ a:hover {
+	color: #ff0000;
+}
+
+#content ul{
+	position: relative;
+	margin:20px 0 20px 20px;
+	color: #949494;
+}
+#content ul li {
+	float: none;
+	margin: 10px 0;
+}
+
+#content{
+	position: relative;
+	overflow: hidden;
+}
+
+#content b{
+	position: relative;
+	display: block;
+	width: 600px;
+	height: 449px;
+	margin: 20px auto;
+	background: url(../img/map.png) no-repeat center;
+}

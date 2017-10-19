@@ -1,0 +1,9 @@
+#content p b{
+	color: #ff0000;
+
+}
+#content p span{
+	color: #999;
+	font-size: 18px;
+	font-weight: bold;	
+}

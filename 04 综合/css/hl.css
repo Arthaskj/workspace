@@ -1,0 +1,84 @@
+.boxT ul{
+	position: relative;
+	word-spacing: 1200px;
+	height: 600px;
+	background: #dedede;
+	perspective:300px;
+}
+.boxT ul li{
+	position: absolute;
+	
+	transition:all .5s;
+	
+	z-index: 1;
+}
+.boxT ul li:hover{
+	z-index: 999;
+	transform:rotate(0deg) translateZ(50px);
+}
+
+.l1{
+	width: 244px;
+	height: 547px;
+	left: 100px;
+	top: 30px;
+	transform:rotate(30deg) scale(.7);
+	
+	background: url(../img/prc1.jpg) no-repeat center;
+}
+.l2{
+	width: 258px;
+	height: 328px;
+	left: 200px;
+	top: 30px;
+	transform:rotate(-30deg) scale(.7);
+	background: url(../img/prc2.jpg) no-repeat center;
+}
+.l3{
+	width: 260px;
+	height: 328px;
+	left: 400px;
+	top: 100px;
+	transform:rotate(30deg) scale(.7);
+	background: url(../img/prc3.jpg) no-repeat center;
+}
+.l4{
+	width: 272px;
+	height: 269px;
+	left: 600px;
+	top: 300px;
+	transform:rotate(-30deg) scale(.7);
+	background: url(../img/prc4.jpg) no-repeat center;
+}
+.l5{
+	width: 269px;
+	height: 269px;
+	left: 800px;
+	top: 200px;
+	transform:rotate(30deg) scale(.7);
+	background: url(../img/prc5.jpg) no-repeat center;
+}
+.l6{
+	width: 280px;
+	height: 276px;
+	left: 900px;
+	top:0px;
+	transform:rotate(-30deg) scale(.7);
+	background: url(../img/prc6.png) no-repeat center;
+}
+.l7{
+	width: 280px;
+	height: 276px;
+	left: 1000px;
+	top: 250px;
+	transform:rotate(30deg) scale(.7);
+	background: url(../img/prc7.png) no-repeat center;
+}
+.l8{
+	width: 280px;
+	height: 276px;
+	left: 600px;
+	top:50px;
+	transform:rotate(-30deg) scale(.7);
+	background: url(../img/prc8.png) no-repeat center;
+}

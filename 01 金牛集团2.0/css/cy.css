@@ -1,0 +1,88 @@
+
+#mainR{
+	background: #fff;
+	overflow: hidden;
+}
+.logokg{
+	display: block;
+	position: relative;
+	width: 136px;
+	height: 66px;
+	margin:20px auto;
+	background: url(../img/logokg.png) no-repeat center;
+}
+#content .listJN{
+	
+	width: 708px;
+	height: auto;
+	overflow: hidden;
+}
+#content .listJN li{
+	position: relative;
+	width: 235px;
+	height: 130px;
+	border-top: 1px solid #ededed;
+	border-right: 1px solid #ededed;
+	overflow: hidden;
+
+}
+#content .listJN .ls:hover{
+	background: #d93c41;
+	
+}
+#content .listJN .ls:hover *{
+	color: #efefef;
+}
+#content .listJN .ls:hover dt h1{
+	color: #efefef;
+	border-color: #efefef;
+}
+
+
+.listJN .rr{
+	border-right: 0px;
+}
+.listJN li:first-child{
+	background: url(../img/cc.png) no-repeat center;
+}
+#content .listJN li dt{
+	position: absolute;
+	width: 130px;
+	height: 90px;
+	border: 0;
+	
+}
+#content .listJN li dl{
+	margin: 8px 0 3px 0;
+	padding: 0;
+	color:#666;
+	font-size: 14px;
+}
+ #content .listJN li  span{
+	margin: 0;
+	padding: 0;
+	color:#b9b9b9;
+	font-size: 14px;
+}
+h1{
+	width: 75px;
+	border-bottom:3px solid #000;
+	font-size: 18px;
+}
+#content .listJN li:nth-child(2) .hcolor{
+	color:#751797;border-color:#751797;
+}
+#content .listJN li:nth-child(3) .hcolor{
+	color:#d73b2f;border-color:#d73b2f;
+}
+#content .listJN li:nth-child(4) .hcolor{
+	color:#1d67b7;border-color:#1d67b7;
+}
+#content .listJN li:nth-child(5) .hcolor{
+	color:#e6801c;border-color:#e6801c;
+}
+#content .listJN li:nth-child(6) .hcolor{
+	color:#378905;border-color:#378905;
+}
+
+

@@ -1,0 +1,15 @@
+.peopleBanner{
+	display: inline-block;
+	width: 735px;
+	height: 126px;
+	margin: 20px 0;
+	background: url(../img/people.jpg) no-repeat center;
+}
+#content ul{
+	margin-left: 20px;
+	color: #949494;
+}
+#content ul li {
+	float: none;
+	margin: 10px 0;
+}

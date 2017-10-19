@@ -1,0 +1,25 @@
+6-46 渐变效果
+
+学习要点
+
+掌握线性渐变和径向渐变的使用
+线性渐变：
+属性：linear-gradinet(开始位置 角度，起始颜色，终止颜色 )
+开始位置：渐变开始的位置，属性值可以为百分比/长度/left、right、top、bottom（可组合使用）
+角度：渐变终止方向的角度，当开始位置为数值或百分比时候可用
+起始颜色......
+终止颜色......
+重复渐变将属性修改为：repeating-linear-gradinet()
+
+径向渐变(放射渐变)：
+属性：radial-gradinet()(形状 发散方向，起始颜色，终止颜色)
+形状:ellipse（椭圆）/circle（圆形）
+发散方向：属性值可以为left、right、top、bottom、center（可组合使用）
+大小(半径)：属性值可用像素或关键字表示
+closest-side:圆心到距离最近的边
+farthest-side:圆心到距离最远的边
+closest-corner：圆心到距离最近的角
+farthest-corner：圆心到距离最远的角
+起始颜色......
+终止颜色......
+重复的径向渐变：repeating-radial-gradinet()
