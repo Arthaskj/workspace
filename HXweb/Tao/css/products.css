@@ -1,0 +1,236 @@
+
+.top{
+width: 100%;
+height:100px;
+background: #ddd;
+
+}
+.toplogo{
+	position: relative;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 90px;
+	height: 90px;
+	background: url(../img/logo.png) no-repeat center;
+
+}
+
+.warp{
+	position: relative;
+	width: 100%;
+	height: 750px;
+}
+.warpimg{
+	position: absolute;
+	width: 100%;
+	height: 750px;
+float: left;
+background: url(../img/cp1/bk1.jpg)no-repeat center;
+border-top: 2px solid #c3a774;
+}
+
+.toolbar{
+position: absolute;
+bottom: -2px;
+left: 0;
+right: 0;
+margin: auto;
+width:60%;
+height: 50px;
+
+}
+.toolbar li{
+	width: 155px;
+	height: 50px;
+	background: #bb9858;
+	float: left;
+	border-right: 1px solid #bb8040;
+	font-size: 25px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+}
+.toolbar li:hover{
+	background: #bb0000;
+
+}
+
+.abouttop{
+	position: relative;
+	width: 100%;
+	height: 100px;
+
+	top: 100px;
+}
+.producttop{
+position: relative;
+width: 150px;
+height:70px;
+left: 0;
+right: 0;
+margin:auto;
+border-bottom: 2px solid #c3a774;
+font-size: 30px;
+	line-height: 70px;
+	text-align: center;
+	color: #000;
+}
+.productbottom{
+position: relative;
+width: 150px;
+height:30px;
+left: 0;
+right: 0;
+margin:auto;
+font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #888;
+}
+
+
+.about{
+	position: relative;
+	width: 1347px;
+	height: 1050px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	color: #888;
+}
+.about .abouttop{
+	position: relative;
+	margin: 20px auto;
+	width: 960px;
+
+}
+
+.about .abouttop li{
+	width: 100px;
+	height: 40px;
+	border: 1px solid #c3a774;
+	border-radius: 50px;
+	text-align: center;
+	line-height: 40px;
+}
+.aboutli{
+	background: #C3A774;
+	color: #fff;
+}
+.aboutLeft{
+	margin-left: 40px;
+}
+
+#productShow{
+	position: relative;
+	width: 1200px;
+	height: 1000px;
+	margin: 100px auto;
+	background: red;
+}
+#productShow li{
+	width: 383px;
+	height: 450px;
+	margin: 25px 0;
+	background: blue;
+/*	box-shadow: 0px 5px 20px  #fff;*/
+}
+#productShow .productLeft{
+	margin: 25px 25px;
+}
+#productShow .proimg{
+	display: block;
+	width: 385px;
+	height: 320px;
+	margin: 0 0 20px 0;
+	/*background: url(../img/cp1/pr25.jpg)no-repeat center ;*/
+	border-bottom: 2px solid #C3A774;
+}
+#productShow .prodt{
+	position: absolute;
+	margin-left: 40px;
+	width: 350px;
+	height: 100px;
+	
+
+}
+#productShow .prodt dl{
+	
+	display:inline-block;
+	width:320px;
+	position:relative
+}
+#productShow .prodt i{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-left: 1px solid #aaa;
+	float: right;
+	right:0;
+	background: url(../img/cp1/1s11.png)no-repeat  -30px 0px;
+}
+
+.footer{
+	position: absolute;
+	
+	width: 100%;
+	height: 285px;
+	border-top: 2px solid #c3a774;
+	margin-top: 80px;
+	background:#eee;
+}
+
+.foot{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 730px;
+	height: 285px;
+	font-size: 14px;
+}
+.foot ul{
+	position: relative;
+	top: 50px;
+	float: left;
+	padding-left: 70px;
+
+}	
+li{
+	cursor: pointer;
+}
+.foot ul li:nth-child(1){
+	position: relative;
+	padding-bottom: 10px;
+	font-weight: bold;
+	font-size: 15px;
+}
+.foot ul li{
+	position: relative;
+	margin-top: 10px;
+}
+.footimg{
+	position: absolute;
+	top: -10px;
+	bottom: 0;
+	right: 0px;
+	margin: auto;
+	width: 150px;
+	height: 150px;
+
+}
+.footimg img{
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-top: 5px;
+	margin-left: 30px;
+	cursor: pointer;
+}

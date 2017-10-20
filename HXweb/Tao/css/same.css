@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style:none;
+}
+ul li{
+    float:left;
+    cursor:pointer;
+}
+.lf{
+	float: left;
+}
+.rt{
+	float: right;
+}
+.jz{
+	position: absolute;
+	top: 0;left: 0;bottom: 0;right: 0;
+	margin: auto;
+}
+.lrjz{
+	position: absolute;
+	left: 0;right: 0;
+	margin: auto;
+}
+.tbjz{
+	position: absolute;
+	top: 0;bottom: 0;
+	margin: auto;
+}
+input{
+	margin:0;
+	padding:0;
+	border:0;
+}
+figure{
+	margin:0;
+	padding: 0;
+}
+ul,dl,dd,p,h1,h2,h3,h4,h5,h6{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
