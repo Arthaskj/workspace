@@ -1,0 +1,154 @@
+sudo apt-get install vim
+
+wps 官网下载64位软件
+
+sudo apt-get install vlc
+
+sudo apt-get install unity-tweak-tool
+
+http://www.qt.io/download/   ./qt-opensource-linux-x64-5.6.1-1.run
+
+sublime插件:emmet  gutter  color  (需要安装iamgeMagick,且还要配置conver_path) jsHint
+,HTML-CSS-JS prettify,color picker,Autoprefixer等等。
+
+nodejs网址:nodejs.org    
+	sudo apt-get install -y nodejs
+
+	Gulp:使用之前安装好的NPM管理器安装gulp，安装说明书：http://github.com/gulpjs/gulp/blob/master/docs/README.md	
+
+	sudo apt-get install Ruby
+	sudo apt-get install Ruby-sass
+
+
+
+
+（ettercap+wireshark+zenmap +dsniff  urlsnarf -i wlan0  +driftnet -i wlan0）
+
+cat /proc/net/arp
+
+
+在GNOME桌面下创建快捷方式
+在GNOME桌面环境下，你可以使用gnome-desktop-item-edit轻松创建创建一个桌面快捷方式。
+$ gonme-desktop-item-edit ~/.local/share/applications --create-new  
+在这个例子中，gnome-desktop-item-edit会在目录～/.local/share/applications中自动创建一个桌面启动器文件。若是想自定义快捷方式图标或者其它信息，你可以手动编辑.desktop文件。
+如果在你的系统上，gnome-desktop-item-edit不可用（例如，在Ubuntu上），你可以依照下面方式安装：
+$ sudo apt-get install --no-install-recommends gnome-panel  
+
+
+
+
+
+对vim进行个性化编辑
+本文对vim的设置仅仅针对UBUNTU与Fedora系统，其他Linux版本我没有实验过，敬请读者谅解！谢谢
+
+在UBUNTU中vim的配置文件存放在/etc/vim目录中，配置文件名为vimrc
+
+在Fedora中vim的配置文件存放在/etc目录中，配置文件名为vimrc
+
+在终端 输入以下命令来编辑vimrc配置文件：
+sudo vim /etc/vim/vimrc
+或者 sudo gedit /etc/vim/vimrc
+
+在文件最后加上
+
+set smartindent //设置行缩进
+set cindent shiftwidth=4//设置自动缩进
+set ts=4
+set number//显示行号
+syntax on//关键字高亮
+set mouse=a //鼠标指哪光标在哪
+
+colorscheme murphy  颜色搭配
+
+vim操作技巧
+:%s/old/new/g      //用new替换当前文件里所有的old
+
+	autocmd BufNewFile *.c 0r ~/.vim/template/html.tlp
+	vim ~./vim/template/html.tlp
+
+git https://github.com/chxuan/change-colorscheme.git
+cd ./change-colorscheme/plugin
+cp change-colorscheme.vim ~/.vim/plugin
+
+github链接vim优化
+
+
+
+
+
+
+***********************************************
+*   用户名/UesrName:ArthasKj                  *
+*   微信/WeChat:kj1285707427                  *   
+*   微店/WeShop:小A部落        		      *   
+*   电子邮件/E-mail:1285707427qq@gmail.com    *
+***********************************************
+
+
+vim下html代码补全
+" 括号引号补全  
+inoremap ( ()<Esc>i  
+inoremap [ []<Esc>i  
+inoremap { {<CR>}<Esc>O  
+inoremap ) <c-r>=ClosePair(')')<CR>  
+inoremap ] <c-r>=ClosePair(']')<CR>  
+inoremap } <c-r>=CloseBracket()<CR>  
+inoremap " <c-r>=QuoteDelim('"')<CR>  
+inoremap ' <c-r>=QuoteDelim("'")<CR>  
+  
+function ClosePair(char)  
+    if getline('.')[col('.') - 1] == a:char  
+        return "\<Right>"  
+    else  
+        return a:char  
+    endif  
+endf  
+  
+function CloseBracket()  
+    if match(getline(line('.') + 1), '\s*}') < 0  
+        return "\<CR>}"  
+    else  
+        return "\<Esc>j0f}a"  
+    endif  
+endf  
+  
+function QuoteDelim(char)  
+    let line = getline('.')  
+    let col = col('.')  
+    if line[col - 2] == "\\"  
+        "Inserting a quoted quotation mark into the string  
+        return a:char  
+    elseif line[col - 1] == a:char  
+        "Escaping out of the string  
+        return "\<Right>"  
+    else  
+        "Starting a string  
+        return a:char.a:char."\<Esc>i"  
+    endif  
+endf  
+
+  
+  
+ 
+" html自动补全  
+autocmd BufNewFile *  setlocal filetype=html  
+function! InsertHtmlTag()  
+    let pat = '\c<\w\+\s*\(\s\+\w\+\s*=\s*[''#$;,()."a-z0-9]\+\)*\s*>'  
+    normal! a>  
+    let save_cursor = getpos('.')  
+    let result = matchstr(getline(save_cursor[1]), pat)  
+    "if (search(pat, 'b', save_cursor[1]) && searchpair('<','','>','bn',0,  getline('.')) > 0)  
+    if (search(pat, 'b', save_cursor[1]))  
+        normal! lyiwf>  
+        normal! a</  
+        normal! p  
+        normal! a>  
+    endif  
+    :call cursor(save_cursor[1], save_cursor[2], save_cursor[3])  
+endfunction  
+inoremap > <ESC>:call InsertHtmlTag()<CR>a<CR><Esc>O  
+
+
+shell编程
+gnome-terminal -x bash -c “sh ./run.sh;exec bash;” 打开另一个终端并输入指令
+
