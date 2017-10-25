@@ -7,49 +7,120 @@
     <script src="js/mui.min.js"></script>
 	<link href="css/mui.min.css" rel="stylesheet"/>
 	<link href="css/lib.css" rel="stylesheet"/>
-    <link href="css/index.css" rel="stylesheet"/>
+	<link href="css/index.css" rel="stylesheet"/>
+	<link href="css/mui-icon-extra" rel="stylesheet"/>
+	<link href="fonts/mui-icons-extra.ttf" />
     <script type="text/javascript" charset="utf-8">
       	mui.init();
 	</script>
 	<script type="text/javascript" charset="utf-8" src="js/index.js"></script>
 </head>
 <body>
-	<header class="mui-bar mui-bar-nav mui-bar-transparent hxdemo_head">
+	
+
+	<!-- 侧滑导航根容器 -->
+<div class="mui-off-canvas-wrap mui-draggable">
+	<!-- 菜单容器 -->
+	<aside class="mui-off-canvas-left">
+	  <div class="mui-scroll-wrapper">
+		<div class="mui-scroll menu_list" >
+		  <!-- 菜单具体展示内容 -->
+		  <h2>菜单栏</h2>
+		  <div></div>
+		  <ul class="menu_list">
+			  <li>菜单一</li>
+			  <li>菜单二</li>
+			  <li>菜单三</li>
+			  <li>菜单四</li>
+			  <li>菜单五</li>
+		  </ul>	
+		</div>
+	  </div>
+	</aside>
+
+
+	<!-- 主页面容器 -->
+	<div class="mui-inner-wrap warpp">
+
+			<!-- <div class="mui-scroll-wrapper">
+					<div class="mui-scroll"> -->
+	  <!-- 主页面标题 -->
+	  <header class="mui-bar mui-bar-nav mui-bar-transparent hxdemo_head">
 		<b class="mui-icon mui-icon-list list_icon tbjz" style="position:absolute;left:10px"></b>
 		<div id="top_search" class="head_text jz"><b class="mui-icon mui-icon-search"></b><p>冰箱洗衣机超级品类日</p></div>
-		<b class="mui-icon mui-icon-list list_icon tbjz" style="position:absolute;right:10px"></b>
+		<b class=" tbjz libao" style="position:absolute;right:10px"><img src="img/41.png" alt="" ></b>
 	</header>
-	<footer class="mui-bar mui-bar-footer">
-		底部
+	
+	<footer class="mui-bar mui-bar-footer footer">
+		<ul class="lrjz foot_icon">
+			<li> <img src="img/34.png" alt=""> <p>猜你喜欢</p></li>
+			<li> <img src="img/35.png" alt=""> <p>分类</p></li>
+			<li> <img src="img/36.png" alt=""> <p>必抢清单</p></b></li>
+			<li> <img src="img/38.png" alt=""> <p>购物车</p></li>
+			<li> <img src="img/39.png" alt=""> <p>我的易购</p></li>
+		</ul>
 	</footer>
-	<div class="mui-content content1">
-		<!-- 图片轮播 -->
-    	<div class="mui-slider photo_banner">
-			<div class="mui-slider-group">
-			  <div class="mui-slider-item"><a href="#"><img src="img/1.jpg" /></a></div>
-			  <div class="mui-slider-item"><a href="#"><img src="img/2.jpg" /></a></div>
-			  <div class="mui-slider-item"><a href="#"><img src="img/3.jpg" /></a></div>
-			  <div class="mui-slider-item"><a href="#"><img src="img/4.jpg" /></a></div>
-			</div>
-		  </div>
-		<!-- 图标 -->
-		<div class="icon_block">
-			<ul>
-				<li><img src="img/icon1.png" alt=""><span>分类</span></li>
-				<li><img src="img/icon2.png" alt=""><span>大聚惠</span></li>
-				<li><img src="img/icon3.png" alt=""><span>苏宁超市</span></li>
-				<li><img src="img/icon4.png" alt=""><span>红孩子母婴</span></li>
-				<li><img src="img/icon6.png" alt=""><span>服装城</span></li>
-				<li><img src="img/icon6.png" alt=""><span>爆款手机</span></li>
-				<li><img src="img/icon7.png" alt=""><span>赚钱</span></li>
-				<li><img src="img/icon8.png" alt=""><span>领云钻</span></li>
-				<li><img src="img/icon9.png" alt=""><span>身边苏宁</span></li>
-				<li><img src="img/icon10.png" alt=""><span>生活家电</span></li>
-			</ul>
-		</div>
-		<div class="banner_box">
-			<img src="img/banner2.png" alt="">
-		</div>
+
+
+	
+	<!-- 主体内容部分 -->
+					<div class="mui-content mui-scroll-wrapper content1">
+						<div class="mui-scroll">
+		  <!-- 主界面具体展示内容 -->
+		  
+			<!-- 图片轮播 -->
+						<div class="mui-slider photo_banner">
+							<div class="mui-slider-group">
+							<div class="mui-slider-item"><a href="#"><img src="img/1.jpg" /></a></div>
+							<div class="mui-slider-item"><a href="#"><img src="img/2.jpg" /></a></div>
+							<div class="mui-slider-item"><a href="#"><img src="img/3.jpg" /></a></div>
+							<div class="mui-slider-item"><a href="#"><img src="img/4.jpg" /></a></div>
+							</div>
+						</div>
+			<!-- 图标 -->
+						<div class="icon_block">
+							<ul>
+								<li><img src="img/icon1.png" alt=""><span>分类</span></li>
+								<li><img src="img/icon2.png" alt=""><span>大聚惠</span></li>
+								<li><img src="img/icon3.png" alt=""><span>苏宁超市</span></li>
+								<li><img src="img/icon4.png" alt=""><span>红孩子母婴</span></li>
+								<li><img src="img/icon6.png" alt=""><span>服装城</span></li>
+								<li><img src="img/icon6.png" alt=""><span>爆款手机</span></li>
+								<li><img src="img/icon7.png" alt=""><span>赚钱</span></li>
+								<li><img src="img/icon8.png" alt=""><span>领云钻</span></li>
+								<li><img src="img/icon9.png" alt=""><span>身边苏宁</span></li>
+								<li><img src="img/icon10.png" alt=""><span>生活家电</span></li>
+							</ul>
+						</div>
+
+
+						<div class="content1_show">
+							<a class="content1_temai" href="">
+								<img class="content1_logo" src="img/21.png" alt="" />
+								<div class="content1_new">
+									每天9:30上新
+								</div>
+								<span class="content1_quan">
+									<i class="mui-icon mui-icon-forward"> </i>
+								</span>
+								<span class="content1_more">查看更多</span>
+							</a>
+							<a class="content1_bsd" href="###">
+								<span>波司登</span>
+								<span class="bg1" href="###"></span>
+								<p>2.5折</p>
+							</a>
+							<a class="content1_two" href="###">
+								<span>ZARA KARA</span>
+								<span class="bg2" href="###"></span>
+								<p>5.6折</p>
+							</a>
+						</div>
+			
+						</div> <!-- mui-scroll -->
+					</div> <!-- content1 -->
+					 
 	</div>
+  </div>
 </body>
 </html>
